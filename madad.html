@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מחשבון הצמדה למדד</title>
+    <link rel="stylesheet" href="madasformat.css"/>
+    <script src="madadJvs.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.3/xlsx.full.min.js"></script>
+  <script>
+    function clsw(){window.close()}
+  </script>
+  <style>
+      .xsign{color:white;position:fixed;left:20px;top:20px;}
+  </style>
+</head>
+
+<body dir="rtl" style="margin: auto;" >
+    
+    
+    <!-- <button style="width: 100px; height: 50px;" onclick="test()"></button> -->
+       
+   <header onclick="clsw()">
+        <div class='xsign'>X</div>
+        <div class="kot">
+             <h1>כסף צומח</h1>
+             <h2>קופות גמל וקרנות השתלמות</h2>
+             <img src="aziz.png" alt="logo" class="logo" id="log" >
+         </div>
+    </header> 
+    <main>
+     
+	<div class="headkot"> מחשבון הצמדה למדד </div>
+        <div class="shita" id="shita">
+            <div class="rd">
+                <input type="radio" name="shita" class="boded"  id="boded" onchange="shita()" checked>
+                <label>חישוב בודד</label>
+            </div>
+            <div class="up">
+                <div class="rd">
+                    <input type="radio" name="shita" class="kovetz" id="kovetz" onchange="shita()">
+                    <label>העלאת קובץ (לפי מדד ידוע)</label>
+                </div>
+        </div>
+        
+        </div>
+        <div class='btnlblup' id="btnlblup">
+            <label for="input-excel" class="lblup" id="lblup">בחר קובץ להעלאה</label>
+            <input type="file" id="input-excel" class="btnup"
+            accept=".xlsx, .xls" onchange="yavee(event)" value="בחר"/>
+            <pre id="fileCntent"></pre>
+        </div>
+        <div class="madadstyle" id="madadstyle">
+            <div >
+                <div class="rd">
+                    <input type="radio" name="madad" class="boded"  id="yadoa" checked>
+                    <label>מדד ידוע</label>
+                </div>
+                <div class="rd">
+                    <input type="radio" name="madad" class="kovetz" id="begin" >
+                    <label>מדד בגין</label>
+                </div>
+            
+            </div>
+        </div>
+
+        
+        <div class="taarich" id="taarich">
+             <div class="rd">  
+                <label for="datefrom" class="lbl" style='font-size:16px' >בחר תאריך מ</label>
+                <input type="date" class="dated" id="datefrom" min="2012-01-01" lang="he" dir="rtl" required>
+            </div>
+            <div  class="rd">
+                <label for="datefrom" class="lbl" style='font-size:16px' >בחר תאריך עד</label>
+                <input type="date" class="dated" id="dateto" min="2012-01-01" lang="he" dir="rtl" required>
+            </div>
+        </div>
+        
+	<div class="schom" id="schomdiv">
+        <div class="rd sch"> 
+            <label for="schom"  style='font-size:16px' class="lbl">הקלד סכום</label>
+            <input type="number" id="schom" min=1/> 
+        </div>
+    </div>
+    <div class="schom" id="hashevdiv">
+	    <div class=" hashev"> 
+	        <input type="button" onclick="cnl()" class="btn" value="חשב" id="hashev"/>
+        </div>
+    </div>
+    <div id="tables">
+        <table class="tbltozaa">
+            <tr>
+                <th class="wt">תאריך</th>
+                <th class="wt">חודש מדד</th>
+                <th>מדד (בסיס 1951)</th>
+            </tr>
+            <tr>
+                <td id="frt1"></td>
+                <td id="md1"></td>
+                <td id="nm1"></td>
+            </tr>
+            <tr>
+                <td id="frt2"></td>
+                <td id="md2"></td>
+                <td id="nm2"></td>
+            </tr>
+        </table>
+	<table class="tbltozaaH">
+            <tr>
+                <th class="wtd">סכום הפקדה</th>
+                <td colspan="2" id="tozk"></td>  
+            </tr>
+            <tr>
+                <th >סכום צמוד למדד</th>
+                <td colspan="2" id="tozm"></td>  
+            </tr>
+        </table>
+    </div>    
+    <!-- מקום להציג את הנתונים -->   
+    <div id="output"></div>
+</main>	
+</body>
+</html>

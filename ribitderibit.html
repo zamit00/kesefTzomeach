@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> מחשבון השקעה</title>
+    
+    <!-- תיקיית אייקונים -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="ribit.css">
+    <script src="ribit.js" defer></script>
+     <script>
+         function clsw(){window.close()}
+    </script>
+</head>
+<body dir="rtl">
+    <header onclick="clsw()">
+        <div class='xsign'>X</div>
+        <div class="kot">
+             <h1>כסף צומח</h1>
+             <h2>קופות גמל וקרנות השתלמות</h2>
+             <img src="aziz.png" alt="logo" class="logo" id="log" >
+         </div>
+    </header>
+    <main>
+        <div class="kotamod">
+            <h1>מחשבון השקעה ריבית דריבית</h1>
+        </div>
+        <div class="sughashkaa">
+            <button id="sug" onclick="opn('dropdown-sug')">בחר סוג השקעה<i class="fa fa-arrow-down hetz"></i></button>
+            <div class="dropdown-sug" id="dropdown-sug">
+                <div>    
+                    <input type="radio" class="rdbutton" id="rdbutton1" name="sughash" onchange="rdchange()">
+                    <label for="rdbutton1">סכום חד פעמי</label>
+                </div>
+                <div>
+                    <input type="radio" class="rdbutton" id="rdbutton2" name="sughash" onchange="rdchange()">
+                    <label for="rdbutton2">סכום בתשלומים חודשיים</label>
+                </div>
+                <div>
+                    <input type="radio" class="rdbutton" id="rdbutton3" name="sughash" checked onchange="rdchange()">
+                    <label for="rdbutton3">חד פעמי + בתשלומים חודשיים</label>
+                </div>
+            </div>
+
+        </div>
+        <div class="schomhashkaa">
+            <button id="schom" onclick="opn('dropdown-schom')">בחר סכום השקעה<i class="fa fa-arrow-down hetz"></i></button>
+            <div class="dropdown-schom" id="dropdown-schom">
+                <div id="schomdiv1">
+                    <label for="txtutton1" class="lbltxt" >סכום חד פעמי</label>    
+                    <input onchange="onch()" type="number" class="txtbutton" id="hadpeami" min="1000" step="500" name="schomhash">    
+                </div >
+                <div id="schomdiv2">
+                    <label for="txtbutton2" class="lbltxt">סכום חודשי</label>
+                    <input  onchange="onch()" type="number" class="txtbutton" id="hodshi" min="50" step="50" name="schomhash">
+                </div>
+            </div>
+
+        </div>
+        <div class="tkofa">
+            <button id="tkofa" onclick="opn('dropdown-tkofa')">בחר תקופה ודמי ניהול<i class="fa fa-arrow-down hetz"></i></button>
+            <div class="dropdown-tkofa" id="dropdown-tkofa">
+                <div id="tkofa1">
+                    <label for="txttkofa1" class="lbltxt">תקופה בשנים</label>    
+                    <select  onchange="onch()" class="txtbutton" id="txttkofa1" ></select>    
+                </div >
+                <div id="dmeynihul">
+                    <label for="txttkofa2" class="lbltxt">שיעור דמי ניהול</label>
+                    <select   onchange="onch()"  class="txtbutton" id="txttkofa2" ></select>   
+                </div>
+            </div>
+
+        </div>
+        <button id="hashev" onclick="hashev()">חשב</button>
+        </div>
+        <div class="tozaot colComp12" id="tozaot" style="display: block;"></div>
+    </main>
+
+</body>
+</html>

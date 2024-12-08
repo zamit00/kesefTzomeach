@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>סימולטור הלוואות - שיטת שפיצר</title>
+  <link rel="stylesheet" href="loanstyle.css">
+  <script>
+    function clsw(){window.close()}
+</script>
+</head>
+<body dir="rtl">
+    <header onclick="clsw()">
+        <div class='xsign'>X</div>
+        <div class="kot">
+             <h1>כסף צומח</h1>
+             <h2>קופות גמל וקרנות השתלמות</h2>
+             <img src="aziz.png" alt="logo" class="logo" id="log" >
+         </div>
+    </header>
+<main>
+  <div class="container">
+    <h1 style="color:green;font-size:22px;">סימולטור הלוואות - שיטת שפיצר</h1>
+    <form id="loan-form">
+      <label for="loan-amount" style="font-size: 18px;">סכום הלוואה:</label>
+      <input type="number" id="loan-amount" placeholder="לדוגמה: 100000" required>
+      
+      <label for="loan-term" style="font-size: 18px;" >תקופת החזרים (חודשים):</label>
+      <input type="number" id="loan-term" placeholder="לדוגמה: 60" required>
+      
+      <label for="interest-rate" style="font-size: 18px;">ריבית שנתית (%):</label>
+      <input type="number" id="interest-rate" step="0.1" placeholder="לדוגמה: 5.5" required>
+      
+      <button type="button" id="calculate-btn" style="font-size: 18px;">חשב</button>
+    </form>
+    <table id="amortization-schedule">
+      <thead>
+        <tr>
+          <th>חודש</th>
+          <th>תשלום חודשי</th>
+          <th>קרן</th>
+          <th>ריבית</th>
+          <th>יתרה</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- נתונים יתווספו דינאמית -->
+      </tbody>
+    </table>
+  </div>
+</main>
+  <script src="loanscript.js"></script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> kesefzomeach</title>
+    
+    <!-- תיקיית אייקונים -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="stylerashi.css">
+    <script src="script.js" defer></script>
+</head>
+<body dir="rtl">
+<header>
+   <div class="kot">
+        <h1>כסף צומח</h1>
+        <h2>קופות גמל וקרנות השתלמות</h2>
+        <img src="aziz.png" alt="logo" class="logo" id="log" >
+    </div>
+    
+    <div class="nav">
+        <div class="tafrit" id="tafrit" onclick="chng(this)">
+            <div class="bar1 bar"></div>
+            <div class="bar2 bar"></div>
+            <div class="bar3 bar"></div>
+        </div> 
+        <div class="dropdown">
+            <button  class="btn" onclick="taf(this)">מידע מקצועי</button>
+            <div class="dropdown-content" id='drp1' >
+                <a href="#" class="kh" >קרנות השתלמות</a>
+                <a href="#">קופות גמל להשקעה</a>
+                <a href="#">קופות גמל לקצבה</a>
+                <a href="#">קופות גמל חסכון לילד</a>
+                <a href="#">קופות גמל אחרות</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button  class="btn" onclick="taf(this)">מחשבונים</button>
+            <div class="dropdown-content" id='drp2' >
+                <a href="#" onclick="hisht('ribitderibit.html')">מחשבון ריבית דריבית</a>
+                <a href="#" onclick="hisht('madad.html')">מחשבון הצמדה למדד</a>
+                <a href="#" onclick="hisht('loan.html')"> סימולטור הלוואות</a>
+                <a href="#">  מחשבונים אחרים </a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button  class="btn" onclick="taf(this)"> נתוני קופות גמל </button>
+            <div class="dropdown-content" id='drp3' >
+                <a href="#">השוואת תשואות</a>
+                <a href="#">חשיפות ונכסים</a>
+                <a href="#">מדד השירות</a>
+                <a href="#">  נתוני השוואה אחרים </a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button  class="btn" onclick='odot()'>אודות</button>  
+        </div>    
+    </div>
+</header>
+
+ <main>
+    <div class="bigimage">
+        <div class="hitalmot_lama">
+            <img src="hishtalmot1.jpg" class="images" id="img1" onclick='hisht("hishtalmot.html")'>
+        </div>
+        <div class="yeled_lama">
+            <img src="layeled.jpg" class="images2" id="img2"  onclick='hisht("hisyeled.html")'>          
+        </div>
+    </div>
+    <div class="alltaha">
+    <div class="tahlichim taha1">
+        <div class="hiz">
+            <img src="hiztarfot1.jpg"  class="hiztarfot" id="hiztarfot" width="93%" height="auto">
+            <a class="taha" style="color:blue;font-weight: bold;
+         margin-bottom: 20px;width:100%;text-align: center;margin-right:10px;" href="#"
+            onclick='hisht("hiztarfot.html")'>הצטרפות למוצר </a>
+        </div>
+        <div class="mesh">
+            <img src="meshicha1.jpg"  class="meshiha" id="meshiha" width="100%" height="auto">
+            <a class="taha" style="color:blue;font-weight: bold;
+            margin-bottom: 20px;width:100%;text-align: center;margin-right:10px;" href="#"
+            onclick='hisht("meshihaHish.html")'>משיכת כספים</a>
+        </div>
+    </div>
+    <div class="tahlichim taha2">
+        <div class="mas">
+            <img src="maslolim1.jpg"  class="maslolim" id="maslolim" width="93%" height="auto">
+            <a class="taha" style="color:blue;font-weight: bold;
+            margin-bottom: 20px;width:100%;text-align: center;margin-right:10px;" href="#">מעבר בין מסלולים</a>
+        </div>
+        <div class="maav">
+            <img src="maavarkoput1.jpg"  class="maavar" id="maavar" width="100%" height="auto">
+            <a class="taha" style="color:blue;font-weight: bold;
+            margin-bottom: 20px;width:100%;text-align: center;margin-right:10px;" href="#">ניוד בין קופת גמל</a>
+        </div>
+    </div>
+    </div>
+    <div id="rev"></div>
+    <div class="odot" >
+        <p id='odot' style="color:green;font-weight: bold;margin-bottom: 20px;"> אודות</p>
+
+            <img src="hagay_zach1.jpg"  class="zach" id="img3" width="30%" height="30%">  
+                <p class="tzevet">
+                     חגי זך, רו"ח ובעל רישיון פנסיוני <br> מעל 20 שנות ניסיון בענף 
+                </p> 
+                <p name="hatar" id="hatar">
+ברוכים הבאים לאתר המקצועי לקופות גמל וקרנות השתלמות!
+שמי חגי זך, ואני מביא עמי מעל 20 שנות ניסיון מקצועי ותפעולי בתחום קופות הגמל 
+וקרנות ההשתלמות. במהלך השנים צברתי ידע מעמיק והבנה רחבה בתהליכים, רגולציה, ושירותים פיננסיים הקשורים לתחום זה.
+                    
+האתר נבנה מתוך מטרה להעניק מידע מקצועי, כלים שימושיים,  ומחשבונים שיעזרו 
+לכם להבין את האפשרויות הקיימות ולתכנן את עתידכם הפיננסי בצורה מיטבית. אני 
+מאמין שלכל אחד מגיע לקבל את הידע והכלים לקבלת החלטות מושכלות, והאתר הזה 
+הוא הדרך שלי לחלוק את הידע שלי ולהנגיש אותו בצורה פשוטה לכל אחד.
+                    
+אני מזמין אתכם לגלות את המידע,להיעזר במחשבונים, ולפנות אליי בכל שאלה 
+או צורך נוסף.  יחד נוכל להפוך את המידע לכלי מעשי לתכנון פיננסי חכם .
+                </p>
+    </div>
+    <div class="migdal">
+        <img class="logomigdal" src="https://www.migdal.co.il/imgs/migdal_logo.png" alt="migdal-logo">
+        <div class="kishurim">
+            <a href="https://www.migdal.co.il/onlinepurchase/gemel-inv#/index" target="_blank">מגדל גמל להשקעה</a>
+            <a href="https://www.migdal.co.il/onlinepurchase/educational-fund2?formid=174d#/index" target="_blank">מגדל השתלמות</a>
+            <a href="https://www.migdal.co.il/onlinepurchase/provident-fund-for-employees2?formid=176c#/index" target="_blank">מגדל קופת גמל</a>
+            <a href="https://www.migdal.co.il/" target="_blank"> אתר מגדל</a>
+        </div>
+        <p name="achrayut" id="achrayut">המידע המוצג באתר זה מיועד למטרות אינפורמטיביות בלבד ואינו מהווה ייעוץ פיננסי, המלצה להשקעה או הצעה לרכישת מוצר או שירות כלשהו. אין לראות במידע הנמצא באתר כהמלצה לפעולה כלשהי בשוק הפיננסי או בשוק המוצרים, ואין להסתמך עליו או לבצע השקעות או רכישות כלשהן על פי המידע המופיע באתר.
+
+            המשתמשים באתר אחראים באופן מלא להחלטותיהם הפיננסיות והצרכניות, ואין להטיל אחריות על בעלי האתר או על תוכן האתר בגין כל פעולה או נזק שייגרם כתוצאה מהשימוש במידע המוצג בו.        </p>
+    </div>
+</main>
+ 
+   
+    
+
+</body>
+</html>
