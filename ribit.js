@@ -1,28 +1,3 @@
- const select=document.getElementById('txttkofa1');
-    const dmn=document.getElementById('txttkofa2');
-    for (let i = 1; i <= 30; i++) {
-        let option = document.createElement('option');
-        option.value = i;  
-        option.textContent = i;  
-        if(i===10){option.selected = true;}
-        select.appendChild(option);  
-  for (let i = 0; i <= 1.1; i += 0.05) {
-        let option = document.createElement('option');
-        
-        // Check if i is approximately 1, with a tolerance
-        if (Math.abs(i - 1) < 0.0001) {
-            option.selected = true;
-        }
-        
-        let value = Math.round(i * 100) / 100;  
-        option.value = value;  
-        option.textContent = value + "%"; 
-        dmn.appendChild(option);  
-    }
-
-
-     
-
 function onch(){
     const tablediv= document.getElementById("tozaot");
        tablediv.innerHTML=""; 
@@ -33,6 +8,7 @@ function opn(x){
     if(element.style.display==='none' || element.style.display==='' ){
         element.style.display='flex'
         if(x==='dropdown-schom'){rdchange()}
+        if(x==='dropdown-tkofa'){addelement()}
     
     }
     else{element.style.display='none'}
@@ -60,14 +36,33 @@ function rdchange(){
     
 }
 
-   
+    const select=document.getElementById('txttkofa1');
+    const dmn=document.getElementById('txttkofa2');
+    for (let i = 1; i <= 30; i++) {
+        let option = document.createElement('option');
+        option.value = i;  
+        option.textContent = i;  
+        if(i===10){option.selected = true;}
+        select.appendChild(option);  
         
    
       
-   
+    for (let i = 0; i <= 1.1; i += 0.05) {
+        let option = document.createElement('option');
+        
+        // Check if i is approximately 1, with a tolerance
+        if (Math.abs(i - 1) < 0.0001) {
+            option.selected = true;
+        }
+        
+        let value = Math.round(i * 100) / 100;  
+        option.value = value;  
+        option.textContent = value+"%"; 
+        dmn.appendChild(option);  
+    }
     
      
-
+}
 
 
 function hashev() {
