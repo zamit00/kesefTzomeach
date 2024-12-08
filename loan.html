@@ -23,13 +23,13 @@
     <h1 style="color:green;font-size:22px;">סימולטור הלוואות - שפיצר</h1>
     <form id="loan-form">
       <label for="loan-amount" style="font-size: 18px;">סכום הלוואה:</label>
-      <input type="number" id="loan-amount" placeholder="לדוגמה: 100000" required>
+      <input onchange= 'ch()' type="number" id="loan-amount" placeholder="לדוגמה: 100000" required>
       
       <label for="loan-term" style="font-size: 18px;" >תקופת החזרים (חודשים):</label>
-      <input type="number" id="loan-term" placeholder="לדוגמה: 60" required>
+      <input onchange= 'ch()' type="number" id="loan-term" placeholder="לדוגמה: 60" required>
       
       <label for="interest-rate" style="font-size: 18px;">ריבית שנתית (%):</label>
-      <input type="number" id="interest-rate" step="0.1" placeholder="לדוגמה: 5.5" required>
+      <input  onchange= 'ch()' type="number" id="interest-rate" step="0.1" placeholder="לדוגמה: 5.5" required>
       
       <button type="button" id="calculate-btn" style="font-size: 18px;">חשב</button>
     </form>
