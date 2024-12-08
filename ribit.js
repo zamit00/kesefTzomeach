@@ -44,7 +44,7 @@ function rdchange(){
         option.textContent = i;  
         if(i===10){option.selected = true;}
         select.appendChild(option);  
-        
+    }   
    
       
     for (let i = 0; i <= 1.1; i += 0.05) {
@@ -60,9 +60,6 @@ function rdchange(){
         option.textContent = value+"%"; 
         dmn.appendChild(option);  
     }
-    
-     
-}
 
 
 function hashev() {
