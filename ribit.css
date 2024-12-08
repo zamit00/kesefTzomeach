@@ -23,7 +23,7 @@ header{width: 100vw;height: 18vh;position: fixed;top:0;background-color: #333;
     .sughashkaa button, .schomhashkaa button, .tkofa button{width: 100vw;height:auto;background-color:  #333;
         color: white;font-size: 18px;font-weight: bold;}
     .dropdown-sug label, .schomhashkaa label ,.tkofa label{color: green;height: 3vh;font-size: 16px;}
-    .dropdown-schom,.dropdown-sug, .dropdown-tkofa{display: none;flex-direction: column;
+    .dropdown-schom,.dropdown-sug, .dropdown-tkofa{display: block;flex-direction: column;
         background-color:lightgray;width: 100vw;padding-top: 1.5vh;}
      .dmeynihul{padding-bottom: 1.5vh;}   
     .dropdown-schom div, .dropdown-sug div, .dropdown-tkofa div{width: 100vw;margin: 5px 0px;}
