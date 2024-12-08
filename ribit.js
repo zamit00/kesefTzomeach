@@ -17,7 +17,6 @@ function opn(x){
     if(element.style.display==='none' || element.style.display==='' ){
         element.style.display='flex'
         if(x==='dropdown-schom'){rdchange()}
-        if(x==='dropdown-tkofa'){addelement()}
     
     }
     else{element.style.display='none'}
