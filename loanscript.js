@@ -1,3 +1,13 @@
+
+
+function ch(){
+   
+    document.getElementById("amortization-schedule").Style.display='none'; 
+    
+}
+
+
+
 document.getElementById('calculate-btn').addEventListener('click', function () {
     const loanAmount = parseFloat(document.getElementById('loan-amount').value);
     const loanTerm = parseInt(document.getElementById('loan-term').value);
