@@ -7,7 +7,8 @@ header{width: 100vw;height: 18vh;position: fixed;top:0;background-color: #333;
    top: 1vh;}
 .kot h2{color:white;position: absolute; left: 50%; transform: translateX(-50%);top: 7vh;}
 .kotamod h1{color: green;margin-top: 22vh;width: 100vw;text-align: center;}
-#tbltoz{border-collapse: collapse;}
+#tbltoz,#tbltoz th, #tbltoz td{border-collapse: collapse;}
+
 @media only screen and (min-width: 767px){
     .logo{position: fixed;right: 6vw;top:3vh;width:100px; height:auto;}
     header{width: 100vw;height: 18vh;position: fixed;top:0;right:5vw;background-color: #333;
