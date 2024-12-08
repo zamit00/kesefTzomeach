@@ -6,6 +6,22 @@
         option.textContent = i;  
         if(i===10){option.selected = true;}
         select.appendChild(option);  
+  for (let i = 0; i <= 1.1; i += 0.05) {
+        let option = document.createElement('option');
+        
+        // Check if i is approximately 1, with a tolerance
+        if (Math.abs(i - 1) < 0.0001) {
+            option.selected = true;
+        }
+        
+        let value = Math.round(i * 100) / 100;  
+        option.value = value;  
+        option.textContent = value + "%"; 
+        dmn.appendChild(option);  
+    }
+
+
+     
 
 function onch(){
     const tablediv= document.getElementById("tozaot");
@@ -48,22 +64,10 @@ function rdchange(){
         
    
       
-    for (let i = 0; i <= 1.1; i += 0.05) {
-        let option = document.createElement('option');
-        
-        // Check if i is approximately 1, with a tolerance
-        if (Math.abs(i - 1) < 0.0001) {
-            option.selected = true;
-        }
-        
-        let value = Math.round(i * 100) / 100;  
-        option.value = value;  
-        option.textContent = value; 
-        dmn.appendChild(option);  
-    }
+   
     
      
-}
+
 
 
 function hashev() {
