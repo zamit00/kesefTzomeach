@@ -1,3 +1,12 @@
+ const select=document.getElementById('txttkofa1');
+    const dmn=document.getElementById('txttkofa2');
+    for (let i = 1; i <= 30; i++) {
+        let option = document.createElement('option');
+        option.value = i;  
+        option.textContent = i;  
+        if(i===10){option.selected = true;}
+        select.appendChild(option);  
+
 function onch(){
     const tablediv= document.getElementById("tozaot");
        tablediv.innerHTML=""; 
@@ -35,17 +44,10 @@ function rdchange(){
         }
     
 }
-function addelement(){
-    const select=document.getElementById('txttkofa1');
-    const dmn=document.getElementById('txttkofa2');
-    for (let i = 1; i <= 30; i++) {
-        let option = document.createElement('option');
-        option.value = i;  
-        option.textContent = i;  
-        if(i===10){option.selected = true;}
-        select.appendChild(option);  
+
+   
         
-    }
+   
       
     for (let i = 0; i <= 1.1; i += 0.05) {
         let option = document.createElement('option');
