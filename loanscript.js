@@ -55,4 +55,5 @@ document.getElementById('calculate-btn').addEventListener('click', function () {
           cell4.textContent = value.toLocaleString(); // המרת המספר לפורמט מקומי
       }
         }
+    table.style.display="block";
   });
