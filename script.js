@@ -6,13 +6,33 @@
 
 
 function hisht(x) {
+  // פתיחת הקובץ בחלון חדש
   window.open(
     x, 
     '_blank', 
-    'width=800,height=600,top=100,left=100,resizable=yes,scrollbars=yes'
+    'width=760,height=600,top=100,left=100,resizable=yes,scrollbars=yes'
   );
-}
 
+  // סגירת תפריט ההמבורגר
+  var hamburgerMenu = document.getElementById("tafrit");
+  if (hamburgerMenu.classList.contains("change")) {
+    hamburgerMenu.classList.remove("change");
+  }
+
+  // החזרת הכפתורים למצבם הרגיל
+  var btns = document.getElementsByClassName('btn');
+  Array.from(btns).forEach(function(btn) {
+    if (btn.classList.contains("btna")) {
+      btn.classList.remove("btna");
+    }
+  });
+
+  // הסתרת כל התפריטים הפתוחים
+  var allDropdowns = document.querySelectorAll('.dropdown-content');
+  allDropdowns.forEach(function(dropdown) {
+    dropdown.style.display = "none";
+  });
+}
 
 
 
