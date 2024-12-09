@@ -20,6 +20,7 @@ function silukin(){
     const interestPayment = remainingBalance * monthlyInterestRate;
     const principalPayment = monthlyPayment - interestPayment;
     remainingBalance -= principalPayment;
+    if(remainingBalance<0){remainingBalance=0};
 
     const row = document.createElement('tr');
     row.innerHTML = `
