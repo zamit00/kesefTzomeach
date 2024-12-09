@@ -93,9 +93,9 @@ main{width: 100vw;height:800px;margin-top: 20vh;}
   
   @media only screen and (max-width: 768px){
     .logo{position: fixed;right: 4vw;top:3vh;width:100px; height:auto;}
+    header{width: 100vw;height: 18vh;}
     .kot h1{font-size: 30px;margin-top: 0px;padding-top:0;}
     .kot h2{font-size: 22px;margin-top: 10px;white-space:nowrap;}
-    header{width: 100vw;height: 28vh;}
     .dropdown-content a{ width: 100vw;text-align: center;margin-right: 0;
     background-color: lightgray;border: 1px solid rgba(0,0,0,0.2);color: black;}
   .change .bar1 {transform: translate(0, 11px) rotate(-45deg);background-color: rgb(89, 227, 89);}
