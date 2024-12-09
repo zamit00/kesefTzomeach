@@ -102,9 +102,10 @@ main{width: 100vw;height:800px;margin-top: 20vh;}
   .change .bar2 {opacity: 0;}
   .change .bar3 { transform: translate(0, -11px) rotate(45deg);background-color: rgb(89, 227, 89);}
    .tafrit{margin-bottom:5px;}
-      .tafrit, .bar{margin-right: 10px;}
+    
   .bar{background-color: white;box-sizing: border-box;}
-  .nav .btn{  float: none; display: none;text-align: center;
+  .bar3{border: 1px solid black;}
+    .nav .btn{  float: none; display: none;text-align: center;
     width: 100vw;height: 35px;border: none;font-size: 1.1rem;}
   .nav{margin-top: 19vh;}
   .nav .btna{  float: none;
