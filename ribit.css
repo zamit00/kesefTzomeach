@@ -1,27 +1,18 @@
 html{font-family:sans-serif,Arial, Helvetica, sans-serif,'Courier New', Courier, monospace;font-size: 14px;}
-header{width: 100vw;height: 18vh;position: fixed;top:0;background-color: #333;
-    overflow: hidden;}
+
 .xsign{color:white;position:fixed;left:20px;
        top:20px;}
-.kot h1{color:rgb(89, 227, 89);position: absolute; left: 50%; transform: translateX(-50%);
-   top: 1vh;}
-.kot h2{color:white;position: absolute; left: 50%; transform: translateX(-50%);top: 7vh;}
+
 .kotamod h1{color: green;margin-top: 22vh;width: 100vw;text-align: center;}
 #tbltoz,#tbltoz th, #tbltoz td{border-collapse: collapse;}
 
 @media only screen and (min-width: 767px){
-    .logo{position: fixed;right: 6vw;top:3vh;width:100px; height:auto;}
-    header{width: 100vw;height: 18vh;position: fixed;top:0;right:5vw;background-color: #333;
-    }
-    .kot h1{font-size: 45px;margin-top: 0px;}
-    .kot h2{font-size: 30px;margin-top: 15px;}
+  
     main{display:none;}
 }
 @media only screen and (max-width: 768px){
     body{margin: 0;padding: 0;}
-    .logo{position: fixed;right: 4vw;top:2vh;width:100px; height:auto;}
-    header{width: 100vw;height: 18vh;}
-    .kot h1, .kot h2{white-space:nowrap;}
+   
     .sughashkaa button, .schomhashkaa button, .tkofa button{width: 100vw;height:auto;background-color:  #333;
         color: white;font-size: 18px;font-weight: bold;}
     .dropdown-sug label, .schomhashkaa label ,.tkofa label{color: green;height: 3vh;font-size: 16px;}
@@ -48,6 +39,5 @@ header{width: 100vw;height: 18vh;position: fixed;top:0;background-color: #333;
 }
 
 @media only screen and (max-width: 480px){
-    .logo{position: fixed;right: 3vw;top:3vh;width:75px; height:auto;}
     .kotamod h1{font-size: 20px;}
   }
