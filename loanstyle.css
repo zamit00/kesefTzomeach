@@ -73,21 +73,14 @@ body {
     background: #333;
     color: white;
   }
-  header{width: 100vw;height: 18vh;position: fixed;top:0;background-color: #333;
-    overflow: hidden;}
+  
 
-.kot h1{color:rgb(89, 227, 89);position: absolute; left: 50%; transform: translateX(-50%);
-   top: 1vh;}
-.kot h2{color:white;position: absolute; left: 50%; transform: translateX(-50%);top: 7vh;}
-.logo{position: fixed;right: 4vw;top:2vh;width:100px; height:auto;}
   @media only screen and (max-width: 768px){
     body{margin: 0;padding: 0;}
-    .logo{position: fixed;right: 4vw;top:2vh;width:100px; height:auto;}
-    header{width: 100vw;height: 18vh;}
-    .kot h1, .kot h2{white-space:nowrap;}
+   
   }  
   @media only screen and (max-width: 480px){
-    .logo{position: fixed;right: 3vw;top:3vh;width:75px; height:auto;}
+   
 
   }
   @media only screen and (min-width: 767px){
