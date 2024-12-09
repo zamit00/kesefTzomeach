@@ -6,18 +6,22 @@ body {
     padding: 0;
 
   }
-#amortization-schedule{display:none;}
+
+ 
   .xsign{color:white;position:fixed;left:20px;top:20px;}
     .container h1{font-size: 25px;}
   .container {
-    max-width: 800px;
     background: #fff; 
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin-top: 18vh;
-  }
+    margin: 20vh auto; 
+     }
   
+  
+
+
   h1 {
     text-align: center;
     color: #333;
@@ -56,39 +60,61 @@ body {
   button:hover {
     background: #218838;
   }
-  
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-  }
-  
-  th, td {
-    padding: 10px;
-    text-align: center;
-    border: 1px solid #ddd;
-  }
-  
   th {
     background: #333;
     color: white;
   }
   
+  table {
+    width: 100%; 
+    border-collapse: collapse; 
+}
+#amortization-schedule,#toz{display:none;}
+#toz{margin-bottom: 10px;}
+th, td {
+    padding: 10px; 
+    border: 1px solid #ddd; 
+    text-align: center; }
+    .loachsilukin,.nake{display:none;color: blue;font-weight: bold;border: none;
+      background: #28a745;} 
 
-  @media only screen and (max-width: 768px){
-    body{margin: 0;padding: 0;}
-   
+    @media only screen and (min-width:850px){
+      .container{ max-width: 800px;}
+      #amortization-schedule th,#amortization-schedule td{width: 160px;box-sizing: border-box;}
+      #toz th,#toz td{width: 250px;box-sizing: border-box;}
+      .loachsilukin,.nake{position: absolute;left: 13vw;bottom: 6vh;width: 100px;height: 30px;
+        z-index: 100;padding: 0%;text-align: center;}
+    }
+    @media only screen and (max-width: 851px){
+    
+      .container{ max-width: 75vw}
+      #amortization-schedule th,#amortization-schedule td{width: 15vw;box-sizing: border-box;}
+      #toz th,#toz td{width:30vw;box-sizing: border-box;}
+      .loachsilukin,.nake{position: absolute;left: 14vw;bottom: 16vh;width: 100px;height: 30px;
+        z-index: 100;text-align: center;}
   }  
-  @media only screen and (max-width: 480px){
-   
-
+  @media only screen and (max-width: 600px){
+    .container{ max-width: 80vw}
+    #amortization-schedule th,#amortization-schedule td{width: 16vw;box-sizing: border-box;}
+    #toz th,#toz td{width: 35vw;box-sizing: border-box;}
+    .loachsilukin,.nake{position: absolute;left: 14vw;bottom: 16vh;width: 90px;height: 30px;
+      z-index: 100;text-align: center;font-size: 12px;}
   }
+  @media only screen and (max-width: 300px){
+    .container{ max-width: 60vw;box-sizing: border-box;}
+    #amortization-schedule th,#amortization-schedule td{width: 12vw;box-sizing: border-box;padding: 0%;
+    font-size: 12px;}
+    #toz th,#toz td{width: 25vw;box-sizing: border-box;padding: 0%;
+      font-size: 12px;}
+      .loachsilukin,.nake{display:none}
+  }
+  
+    
+ 
   @media only screen and (min-width: 767px){
    body {
     width: 100%; 
     margin: 0 auto; 
     padding: 0; }
-
-
   }
   
