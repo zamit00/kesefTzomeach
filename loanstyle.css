@@ -84,7 +84,12 @@ body {
 
   }
   @media only screen and (min-width: 767px){
-    main{display: none;}
+   body {
+    width: 100%; 
+    max-width: 767px; 
+    margin: 0 auto; 
+    padding: 0; }
+
 
   }
   
