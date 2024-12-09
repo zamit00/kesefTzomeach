@@ -1,9 +1,9 @@
 
 
-function rld(){
-  location.reload();
-}
+
+
 function silukin(){
+  
   const loanAmount = parseFloat(document.getElementById('loan-amount').value);
   const loanTerm = parseInt(document.getElementById('loan-term').value);
   const annualInterestRate = parseFloat(document.getElementById('interest-rate').value) / 100;
@@ -56,8 +56,7 @@ function silukin(){
     }
       }
  table.style.display="block";
- document.getElementById('loachsilukin').style.display="none";
- document.getElementById('nake').style.display="block";
+ 
 }
 
 
@@ -65,22 +64,28 @@ document.getElementById('calculate-btn').addEventListener('click', function () {
     const loanAmount = parseFloat(document.getElementById('loan-amount').value);
     const loanTerm = parseInt(document.getElementById('loan-term').value);
     const annualInterestRate = parseFloat(document.getElementById('interest-rate').value) / 100;
-  
-    if (isNaN(loanAmount) || isNaN(loanTerm) || isNaN(annualInterestRate)) {
-      alert('נא למלא את כל השדות בצורה נכונה.');
-      return;
+
+    var opt=document.getElementById('calculate-btn').textContent
+    
+      if (isNaN(loanAmount) || isNaN(loanTerm) || isNaN(annualInterestRate)) {
+        alert('נא למלא את כל השדות בצורה נכונה.');
+        return;
+      }
+      if(opt==='חשב'){
+        document.getElementById('calculate-btn').textContent='נקה הכל';
+      const monthlyInterestRate = annualInterestRate / 12;
+      const monthlyPayment = loanAmount * (monthlyInterestRate * Math.pow(1 + monthlyInterestRate, loanTerm)) / (Math.pow(1 + monthlyInterestRate, loanTerm) - 1);
+    
+      
+      document.getElementById('toz').style.display="block";
+      document.getElementById('loachsilukin').style.display="block";
+      document.getElementById('tashlomhodshi').innerText=Number(monthlyPayment.toFixed(2)).toLocaleString();
+      document.getElementById('hechzerim').innerText=Number((monthlyPayment*loanTerm).toFixed(2)).toLocaleString();
+      document.getElementById('ribit').innerText=Number(((monthlyPayment*loanTerm)-loanAmount).toFixed(2)).toLocaleString();
+    }
+    else{
+      location.reload();
     }
   
-    const monthlyInterestRate = annualInterestRate / 12;
-    const monthlyPayment = loanAmount * (monthlyInterestRate * Math.pow(1 + monthlyInterestRate, loanTerm)) / (Math.pow(1 + monthlyInterestRate, loanTerm) - 1);
-  
-    
-    document.getElementById('toz').style.display="block";
-    document.getElementById('loachsilukin').style.display="block";
-    document.getElementById('tashlomhodshi').innerText=Number(monthlyPayment.toFixed(2)).toLocaleString();
-    document.getElementById('hechzerim').innerText=Number((monthlyPayment*loanTerm).toFixed(2)).toLocaleString();
-    document.getElementById('ribit').innerText=Number(((monthlyPayment*loanTerm)-loanAmount).toFixed(2)).toLocaleString();
-    
-    
     /*table.style.display="block";*/
   });
