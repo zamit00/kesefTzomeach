@@ -1,11 +1,11 @@
 body {margin:0;padding: 0%;font-family:Arial;box-sizing: border-box;font-size: 14px;}
 header{width: 100vw;height: 22vh;position: fixed;top:0;background-color: #333;
- }
+}
 .kot h1{color:rgb(89, 227, 89);position: absolute; left: 50%; transform: translateX(-50%);
     top: 1vh;}
 .kot h2{color:white;position: absolute; left: 50%; transform: translateX(-50%);top: 7vh;}
 .nav {background-color: #333;max-height: 30px;}
- main{width: 100vw;height:800px;margin-top: 20vh;}
+main{width: 100vw;height:800px;margin-top: 20vh;}
 
 .bar1,.bar2,.bar3{width: 35px;height: 4px;margin: 7px;
   background-color: #333;z-index: 10;transition: 0.4s;}
@@ -27,8 +27,8 @@ header{width: 100vw;height: 22vh;position: fixed;top:0;background-color: #333;
 
   @media only screen and (min-width: 767px){
     .logo{position: fixed;right: 6vw;top:3vh;width:100px; height:auto;}
-    header{width: 100vw;height: 18vh;position: fixed;top:0;right:5vw;background-color: #333;
-    }
+    header{width: 100vw;height: 22vh;position: fixed;top:0;right:5vw;background-color: #333;
+   }
     .kot h1{font-size: 45px;margin-top: 0px;}
     .kot h2{font-size: 30px;margin-top: 15px;}
     
@@ -47,7 +47,7 @@ header{width: 100vw;height: 22vh;position: fixed;top:0;background-color: #333;
       padding-right: 10px;font-size: 1.1rem;background-color: lightgray;
       color: black;border-bottom: 1px solid rgba(0,0,0,0.2);}
     .dropdown:hover .dropdown-content{display: block;}
-    .dropdown:hover .btn{color:green;}
+    .dropdown:hover .btn{color:rgb(89, 227, 89);}
     .dropdown:hover .dropdown-content a{ width: 160px;}
     .dropdown-content a:hover {background-color: azure;}
     
@@ -56,7 +56,7 @@ header{width: 100vw;height: 22vh;position: fixed;top:0;background-color: #333;
     margin-right: 5vw;}
     .images2,.images {
       width: 34.5vw;
-      height:30vh; 
+      height: 50vh; 
       margin-top: 5vh;   
     }
     .tahlichim{display: flex;width: 34.5; }
@@ -93,10 +93,9 @@ header{width: 100vw;height: 22vh;position: fixed;top:0;background-color: #333;
   
   @media only screen and (max-width: 768px){
     .logo{position: fixed;right: 4vw;top:3vh;width:100px; height:auto;}
-    header{width: 100vw;height: 18vh;}
     .kot h1{font-size: 30px;margin-top: 0px;padding-top:0;}
     .kot h2{font-size: 22px;margin-top: 10px;white-space:nowrap;}
-  }
+    header{width: 100vw;height: 28vh;}
     .dropdown-content a{ width: 100vw;text-align: center;margin-right: 0;
     background-color: lightgray;border: 1px solid rgba(0,0,0,0.2);color: black;}
   .change .bar1 {transform: translate(0, 11px) rotate(-45deg);background-color: rgb(89, 227, 89);}
@@ -120,7 +119,7 @@ header{width: 100vw;height: 22vh;position: fixed;top:0;background-color: #333;
   .bigimage{display: flex;flex-direction: column;align-items: center;}
   .images2,.images {
    width: 100vw;
-   height: 45vh;  
+   height: 60vh;  
    margin-left: auto;
    margin-right: auto;  
  }
@@ -142,7 +141,7 @@ font-family:Arial, Helvetica, sans-serif;}
   @media only screen and (max-width: 500px){
     .logo{position: fixed;right: 4vw;top:2vh;width:75px; height:auto;}
   }
-@media only screen and (max-width: 320px){
+  @media only screen and (max-width: 320px){
     .logo{position: fixed;right: 4vw;top:2vh;width:55px; height:auto;}
   }
 
