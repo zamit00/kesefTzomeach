@@ -6,7 +6,27 @@
   <title>keseftsomeach</title>
   <link rel="stylesheet" href="loanstyle.css">
    <link rel="stylesheet" href="koteretstyle.css"/> 
+
   <script>
+    const input = document.getElementById('loan-amount');
+
+    input.addEventListener('input', () => {
+      // שמירה על המיקום של הסמן
+      const cursorPosition = input.selectionStart;
+      const rawValue = input.value.replace(/,/g, ''); // הסרת פסיקים מהערך
+
+      // בדיקת מספר תקין
+      if (!isNaN(rawValue) && rawValue !== '') {
+        const formattedValue = Number(rawValue).toLocaleString(); // הוספת פסיקים
+        input.value = formattedValue;
+
+        // החזרת הסמן למיקום הנכון
+        const commasBeforeCursor = (input.value.slice(0, cursorPosition).match(/,/g) || []).length;
+        const commasAfterFormat = (formattedValue.slice(0, cursorPosition).match(/,/g) || []).length;
+        input.setSelectionRange(cursorPosition + (commasAfterFormat - commasBeforeCursor), cursorPosition + (commasAfterFormat - commasBeforeCursor));
+      }
+    });
+		
     function clsw(){window.close()}
 </script>
 </head>
