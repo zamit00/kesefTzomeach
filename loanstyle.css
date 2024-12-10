@@ -7,7 +7,8 @@ body {
 
   }
 
- 
+ .tables{display:flex; flex-direction:column;
+         align-items: center;}
   .xsign{color:white;position:fixed;left:20px;top:20px;}
     .container h1{font-size: 25px;}
   .container {
