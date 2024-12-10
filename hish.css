@@ -14,7 +14,7 @@ h2{font-size: 27px;color:blue; font-weight: bold;}
 
 @media only screen and (max-width: 768px){
     h1{font-size: 20px;color:green; font-weight: bold;}
-    h2{font-size: 14px;color:blue; font-weight: bold;}
+    h2,.blue{font-size: 14px;color:blue; font-weight: bold;}
     a{font-size: 14px;text-align: right;}
 }
 @media only screen and (max-width: 480px){
