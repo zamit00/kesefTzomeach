@@ -7,8 +7,7 @@ body {
 
   }
 
- .tables{display:flex; flex-direction:column;
-         align-items: center;}
+ 
   .xsign{color:white;position:fixed;left:20px;top:20px;}
     .container h1{font-size: 25px;}
   .container {
@@ -110,7 +109,8 @@ th, td {
     .container{ max-width: 100vw}
     #amortization-schedule th,#amortization-schedule td{width: 16vw;box-sizing: border-box;font-size:11px;}
     #toz th,#toz td{width: 40vw;box-sizing: border-box;}
-      
+    .tables{display:flex; flex-direction:column;
+         align-items: center;} 
     
   }
   @media only screen and (max-width: 300px){
