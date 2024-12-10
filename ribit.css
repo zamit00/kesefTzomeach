@@ -5,37 +5,56 @@ html{font-family:sans-serif,Arial, Helvetica, sans-serif,'Courier New', Courier,
 
 .kotamod h1{color: green;margin-top: 20vh;width: 100vw;text-align: center;}
 #tbltoz,#tbltoz th, #tbltoz td{border-collapse: collapse;}
+.alltoz{display: none;flex-direction: column;}
 
 @media only screen and (min-width: 767px){
-  
+.divtozz{width: 60vw;display: flex;justify-content: right;margin-top: 10px;}
+.divtozz div{width: 40vw;}
+.ribitother{margin-right: 15vw;}
+.selecttoz{width: 50px;font-size: 12px;margin-right: 2vw;}
+.lbltoz{font-size: 18px;color: blue;font-weight: bold;}
+
+
+
+
+main{display: flex;flex-direction: column;align-items: center;}
    body {
     width: 100%; 
     margin: 0 auto; 
     padding: 0; }
-         .sughashkaa button, .schomhashkaa button, .tkofa button{width: 100vw;height:auto;background-color:  #333;
+         .sughashkaa button, .schomhashkaa button, .tkofa button{width: 60vw;height:auto;background-color:  #333;
         color: white;font-size: 18px;font-weight: bold;}
     .dropdown-sug label, .schomhashkaa label ,.tkofa label{color: green;height: 3vh;font-size: 16px;}
     .dropdown-schom,.dropdown-sug, .dropdown-tkofa{display: block;flex-direction: column;
-        background-color:lightgray;width: 100vw;padding-top: 1.5vh;}
+        background-color:lightgray;width: 60vw;padding-top: 1.5vh;}
      .dmeynihul{padding-bottom: 1.5vh;}   
-    .dropdown-schom div, .dropdown-sug div, .dropdown-tkofa div{width: 100vw;margin: 5px 0px;}
+    .dropdown-schom div, .dropdown-sug div, .dropdown-tkofa div{width: 60vw;margin: 5px 0px;}
     .lbltxt{margin-right: 20px;}
     .txtbutton{width: 25vw;display: inline;float: left;margin-left: 10vw;}
     .hetz{margin-left: 15vw;float: left;}
     #txttkofa1,#txttkofa2,#hadpeami, #hodshi{width: 80px;text-align: center;}
     #schom,#sug,#tkofa{text-align: right;padding-right: 2vw;border: 1px solid rgba(211,211,211,0.2);}
     
-    #hashev{width: 100vw;height:auto;background-color:  #333;
+    #hashev{width: 60vw;height:auto;background-color:  #333;
         color: white;font-size: 18px;font-weight: bold;}
-    #tozaot, #tozaot tr,#tozaot td ,#tozaot th{width: 100vw;}
+    #tozaot, #tozaot tr,#tozaot td ,#tozaot th{width: 60vw;}
     
     .kottoz{color: green;font-size: 18px;font-weight: bold;}
     .txttd{background-color: #333;color: white;border: 1px solid green;border-collapse: collapse;
     font-size: 16px;font-weight: bolder;text-align: right;padding-right: 2vw;}
     .numtd{background-color: white;color: #333;border: 1px solid green;
         border-collapse: collapse;font-size: 16px;font-weight: bolder;text-align: center;}
+    #tozaot{margin-top: 2vh;}
 }
 @media only screen and (max-width: 768px){
+    .divtozz{width: 100vw;display: flex;justify-content: right;margin-top: 10px;}
+    .divtozz div{width: 40vw;}
+    .ribitother{margin-right: 15vw;}
+    .selecttoz{width: 50px;font-size: 12px;margin-right: 2vw;}
+    .lbltoz{font-size: 16px;color: blue;font-weight: bold;}
+    .alltoz{display: none;flex-direction: column;}
+    #tozaot{margin-top: 2vh;}
+
     body{margin: 0;padding: 0;}
    
     .sughashkaa button, .schomhashkaa button, .tkofa button{width: 100vw;height:auto;background-color:  #333;
