@@ -107,15 +107,15 @@ th, td {
   }  
   @media only screen and (max-width: 768px){
     .container{ max-width: 100vw}
-    #amortization-schedule th,#amortization-schedule td{width: 16vw;box-sizing: border-box;}
+    #amortization-schedule th,#amortization-schedule td{width: 16vw;box-sizing: border-box;font-size:calc(1em-0.2vw);}
     #toz th,#toz td{width: 35vw;box-sizing: border-box;}
-      th,td{font-size:calc(1em-0.2vw);
+      
     
   }
   @media only screen and (max-width: 300px){
     .container{ max-width: 100vw;box-sizing: border-box;}
     #amortization-schedule th,#amortization-schedule td{width: 12vw;box-sizing: border-box;padding: 0%;
-    font-size: 12px;}
+    font-size:calc(1em-0.2vw);}
     #toz th,#toz td{width: 25vw;box-sizing: border-box;padding: 0%;
       font-size: 12px;}
       
