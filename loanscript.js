@@ -18,7 +18,8 @@
 
 function silukin(){
   
-  const loanAmount = parseFloat(document.getElementById('loan-amount').value);
+  const numericValue = document.getElementById('loan-amount').value.replace(/[^\d]/g, '');	
+  const loanAmount = parseFloat(numericValue);
   const loanTerm = parseInt(document.getElementById('loan-term').value);
   const annualInterestRate = parseFloat(document.getElementById('interest-rate').value) / 100;
   const monthlyInterestRate = annualInterestRate / 12;
@@ -101,8 +102,10 @@ function silukin(){
 	
 	
 	document.getElementById('calculate-btn').addEventListener('click', function () {
-    const loanAmount = parseFloat(document.getElementById('loan-amount').value);
-    const loanTerm = parseInt(document.getElementById('loan-term').value);
+    const numericValue = document.getElementById('loan-amount').value.replace(/[^\d]/g, '');	
+   const loanAmount = parseFloat(numericValue);
+ 
+const loanTerm = parseInt(document.getElementById('loan-term').value);
     const annualInterestRate = parseFloat(document.getElementById('interest-rate').value) / 100;
 	const gr=document.getElementById('grace');
 	const chekb=document.getElementById('chb');
