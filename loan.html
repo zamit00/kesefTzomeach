@@ -10,7 +10,7 @@
   <script>
     const input = document.getElementById('loan-amount');
 
-    input.addEventListener('input', () => {
+ function inputchange () => {
       // שמירה על המיקום של הסמן
       const cursorPosition = input.selectionStart;
       const rawValue = input.value.replace(/,/g, ''); // הסרת פסיקים מהערך
@@ -25,7 +25,7 @@
         const commasAfterFormat = (formattedValue.slice(0, cursorPosition).match(/,/g) || []).length;
         input.setSelectionRange(cursorPosition + (commasAfterFormat - commasBeforeCursor), cursorPosition + (commasAfterFormat - commasBeforeCursor));
       }
-    });
+    }
 		
     function clsw(){window.close()}
 </script>
