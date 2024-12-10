@@ -27,9 +27,9 @@
   }
 
   @media only screen and (max-width: 500px){
-    .logo{position: fixed;right: 2vw;top:2vh;width:60px; height:auto;}
+    .logo{position: fixed;right: 2vw;top:1.5vh;width:55px; height:auto;}
   }
   @media only screen and (max-width: 320px){
-    .logo{position: fixed;right: 2vw;top:2vh;width:55px; height:auto;}
+    .logo{position: fixed;right: 2vw;top:1.5vh;width:55px; height:auto;}
   }
    
