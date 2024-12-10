@@ -8,24 +8,17 @@
    <link rel="stylesheet" href="koteretstyle.css"/> 
 
   <script>
-    const input = document.getElementById('loan-amount');
+    function formatNumber(input) {
+  // הסרת כל תווים שאינם ספרות
+  const numericValue = input.value.replace(/[^\d]/g, '');
 
- function inputchange () => {
-      // שמירה על המיקום של הסמן
-      const cursorPosition = input.selectionStart;
-      const rawValue = input.value.replace(/,/g, ''); // הסרת פסיקים מהערך
+  // המרת המספר לעיצוב עם פסיקים
+  const formattedValue = numericValue ? parseInt(numericValue, 10).toLocaleString() : '';
 
-      // בדיקת מספר תקין
-      if (!isNaN(rawValue) && rawValue !== '') {
-        const formattedValue = Number(rawValue).toLocaleString(); // הוספת פסיקים
-        input.value = formattedValue;
+  // עדכון השדה עם הערך המעוצב
+  input.value = formattedValue;
+}
 
-        // החזרת הסמן למיקום הנכון
-        const commasBeforeCursor = (input.value.slice(0, cursorPosition).match(/,/g) || []).length;
-        const commasAfterFormat = (formattedValue.slice(0, cursorPosition).match(/,/g) || []).length;
-        input.setSelectionRange(cursorPosition + (commasAfterFormat - commasBeforeCursor), cursorPosition + (commasAfterFormat - commasBeforeCursor));
-      }
-    }
 		
     function clsw(){window.close()}
 </script>
@@ -44,8 +37,9 @@
     <h1 style="color:green;font-size:22px;">סימולטור הלוואות - שפיצר</h1>
     <form id="loan-form">
       <label for="loan-amount" style="font-size: 18px;">סכום הלוואה:</label>
-      <input  onchange="inputchange()" type="number" id="loan-amount" placeholder="לדוגמה: 100000" required>
-      
+      <input type="text" id="loan-amount" placeholder="לדוגמה: 100000" 
+  required inputmode="numeric" oninput="formatNumber(this)" />
+
       <label for="loan-term" style="font-size: 18px;" >תקופת החזרים (חודשים):</label>
       <input  type="number" id="loan-term" placeholder="לדוגמה: 60" required>
       
