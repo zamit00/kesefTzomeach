@@ -73,7 +73,19 @@
             </div>
 
         </div>
-        <button id="hashev" onclick="hashev()">חשב</button>
+        <button id="hashev" onclick="hashev(0.04)">חשב</button>
+        </div>
+        <div class="alltoz" id="alltoz">
+            <div class="divtozz">
+                <div class="kottoz">חישוב לפי ריבית של 4% שנתי:</div>
+                <div class="ribitother">
+                    <label class="lbltoz">בחר ריבית אחרת</label>
+                    <select class="selecttoz" id="selecttoz" onchange="othribit()">
+                </div>
+
+                </select>
+            </div>
+            
         </div>
         <div class="tozaot colComp12" id="tozaot" style="display: block;"></div>
     </main>
