@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>keseftsomeach</title>
   <link rel="stylesheet" href="loanstyle.css">
-  <link rel="stylesheet" href="koteretstyle.css"/>
+  <!-- <link rel="stylesheet" href="koteretstyle.css"/> -->
   <script>
     function clsw(){window.close()}
 </script>
@@ -16,7 +16,7 @@
         <div class="kot">
              <h1>כסף צומח</h1>
              <h2>קופות גמל וקרנות השתלמות</h2>
-             <img src="aziz.png" alt="logo" class="logo" id="log" >
+             <!-- <img src="aziz.png" alt="logo" class="logo" id="log" > -->
          </div>
     </header>
 <main>
@@ -31,6 +31,12 @@
       
       <label for="interest-rate" style="font-size: 18px;">ריבית שנתית (%):</label>
       <input  type="number" id="interest-rate" step="0.1" placeholder="לדוגמה: 5.5" required>
+	  
+	  <label for="interest-rate" style="font-size: 18px;">תקופת גרייס (אופציונלי)</label>
+	  <div class="input" style="display:flex;justify-content: right; align-items:center;">
+		<input type="checkbox" class="chb" id="chb" style="max-width:50px;" onchange="addgrace(this)">
+		<select style="width:80px;height:20px;margin-right:20px;" id="grace" class="grace">בחר תקופה בחודשים</select>
+	  </div>
       
       <button type="button" id="calculate-btn" style="font-size: 18px;">חשב</button>
       
