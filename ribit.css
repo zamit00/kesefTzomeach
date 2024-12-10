@@ -3,7 +3,7 @@ html{font-family:sans-serif,Arial, Helvetica, sans-serif,'Courier New', Courier,
 .xsign{color:white;position:fixed;left:20px;
        top:20px;}
 
-.kotamod h1{color: green;margin-top: 22vh;width: 100vw;text-align: center;}
+.kotamod h1{color: green;margin-top: 20vh;width: 100vw;text-align: center;}
 #tbltoz,#tbltoz th, #tbltoz td{border-collapse: collapse;}
 
 @media only screen and (min-width: 767px){
