@@ -1,6 +1,10 @@
 function onch(){
     const tablediv= document.getElementById("tozaot");
        tablediv.innerHTML=""; 
+       document.getElementById("alltoz").style.display="none";
+       document.getElementById('dropdown-sug').style.display='flex' ;
+       document.getElementById('dropdown-tkofa').style.display='flex' ;
+       document.getElementById('dropdown-schom').style.display='flex' ;
 }
 
 function opn(x){
@@ -38,6 +42,7 @@ function rdchange(){
 
     const select=document.getElementById('txttkofa1');
     const dmn=document.getElementById('txttkofa2');
+    const otherribit=document.getElementById('selecttoz');
     for (let i = 1; i <= 30; i++) {
         let option = document.createElement('option');
         option.value = i;  
@@ -60,11 +65,27 @@ function rdchange(){
         option.textContent = value+"%"; 
         dmn.appendChild(option);  
     }
+    for (let i = 0.01; i <= 0.21; i += 0.01) {
+        let option = document.createElement('option');
+        
+        // Check if i is approximately 1, with a tolerance
+        if (Math.abs(i - 1) < 0.0001) {
+            option.selected = true;
+        }
+        
+        let value = Math.round(i * 100) / 100;  
+        option.value = value;  
+        option.textContent = Math.round(value*100)+"%"; 
+        otherribit.appendChild(option);  
+    }
+    function othribit(){
+        var rb=document.getElementById('selecttoz').value
+        hashev(rb);
+    }
 
-
-function hashev() {
+function hashev(x) {
     
-            
+    const rb=parseFloat(x);        
     // Retrieve values from input fields
     const hp=document.getElementById("hadpeami");
     const tash=document.getElementById("hodshi");
@@ -101,7 +122,7 @@ function hashev() {
     //let ribitchoose=document.getElementById("selectribit");
     //let ribit=ribitchoose.value;
     if(!dn || dn===0){dn=1;}
-    let z=0.04-dn/100;
+    let z=rb-dn/100;
 
     if(x1<0||x2<0){alert('סכומים לא תקינים');return;}
     let selectElement = document.getElementById("txttkofa1");
@@ -129,11 +150,8 @@ function hashev() {
        var table; var td; var tr;let par;let selectsim;
        const tablediv= document.getElementById("tozaot");
        tablediv.innerHTML=""; 
-       par= document.createElement("p"); 
-       par.innerHTML='חישוב לפי ריבית של 4% שנתי:';
-       par.className='kottoz';
+       document.getElementById("alltoz").style.display="flex";
        
-       tablediv.appendChild(par);
        table= document.createElement("table");
         table.id="tbltoz";table.className="tbltoz";
        tablediv.appendChild(table);
