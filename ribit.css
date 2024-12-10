@@ -51,7 +51,7 @@ main{display: flex;flex-direction: column;align-items: center;}
     .divtozz div{width: 40vw;}
     .ribitother{margin-right: 15vw;}
     .selecttoz{width: 50px;font-size: 12px;margin-right: 2vw;}
-    .lbltoz{font-size: 16px;color: blue;font-weight: bold;}
+    .lbltoz{font-size: 12px;color: blue;font-weight: bold;}
     .alltoz{display: none;flex-direction: column;}
     #tozaot{margin-top: 2vh;}
 
@@ -74,7 +74,7 @@ main{display: flex;flex-direction: column;align-items: center;}
         color: white;font-size: 18px;font-weight: bold;}
     #tozaot, #tozaot tr,#tozaot td ,#tozaot th{width: 100vw;}
     
-    .kottoz{color: green;font-size: 18px;font-weight: bold;}
+    .kottoz{color: green;font-size: 12px;font-weight: bold;}
     .txttd{background-color: #333;color: white;border: 1px solid green;border-collapse: collapse;
     font-size: 16px;font-weight: bolder;text-align: right;padding-right: 2vw;}
     .numtd{background-color: white;color: #333;border: 1px solid green;
