@@ -1,27 +1,18 @@
 <!DOCTYPE html>
-<html lang="he" dir="rtl">
+<html lang="he">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>keseftsomeach</title>
-  <link rel="stylesheet" href="loanstyle.css">
-   <link rel="stylesheet" href="koteretstyle.css"/> 
-
-  <script>
-    function formatNumber(input) {
-  // הסרת כל תווים שאינם ספרות
-  const numericValue = input.value.replace(/[^\d]/g, '');
-
-  // המרת המספר לעיצוב עם פסיקים
-  const formattedValue = numericValue ? parseInt(numericValue, 10).toLocaleString() : '';
-
-  // עדכון השדה עם הערך המעוצב
-  input.value = formattedValue;
-}
-
-		
-    function clsw(){window.close()}
-</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> keseftsomeach</title>
+    
+    <!-- תיקיית אייקונים -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="ribit.css">
+    <link rel="stylesheet" href="koteretstyle.css"/>
+    <script src="ribit.js" defer></script>
+     <script>
+         function clsw(){window.close()}
+    </script>
 </head>
 <body dir="rtl">
     <header onclick="clsw()">
@@ -29,68 +20,75 @@
         <div class="kot">
              <h1>כסף צומח</h1>
              <h2>קופות גמל וקרנות השתלמות</h2>
-              <img src="aziz.png" alt="logo" class="logo" id="log" > 
+             <img src="aziz.png" alt="logo" class="logo" id="log" >
          </div>
     </header>
-<main>
-  <div class="container">
-    <h1 style="color:green;font-size:22px;">סימולטור הלוואות - שפיצר</h1>
-    <form id="loan-form">
-      <label for="loan-amount" style="font-size: 18px;">סכום הלוואה:</label>
-      <input type="text" id="loan-amount" placeholder="לדוגמה: 100000" 
-  required inputmode="numeric" oninput="formatNumber(this)" />
+    <main>
+        <div class="kotamod">
+            <h1>מחשבון השקעה ריבית דריבית</h1>
+        </div>
+        <div class="sughashkaa">
+            <button id="sug" onclick="opn('dropdown-sug')">בחר סוג השקעה<i class="fa fa-arrow-down hetz"></i></button>
+            <div class="dropdown-sug" id="dropdown-sug">
+                <div>    
+                    <input type="radio" class="rdbutton" id="rdbutton1" name="sughash" onchange="rdchange()">
+                    <label for="rdbutton1">סכום חד פעמי</label>
+                </div>
+                <div>
+                    <input type="radio" class="rdbutton" id="rdbutton2" name="sughash" onchange="rdchange()">
+                    <label for="rdbutton2">סכום בתשלומים חודשיים</label>
+                </div>
+                <div>
+                    <input type="radio" class="rdbutton" id="rdbutton3" name="sughash" checked onchange="rdchange()">
+                    <label for="rdbutton3">חד פעמי + בתשלומים חודשיים</label>
+                </div>
+            </div>
 
-      <label for="loan-term" style="font-size: 18px;" >תקופת החזרים (חודשים):</label>
-      <input  type="number" id="loan-term" placeholder="לדוגמה: 60" required>
-      
-      <label for="interest-rate" style="font-size: 18px;">ריבית שנתית (%):</label>
-      <input  type="number" id="interest-rate" step="0.1" placeholder="לדוגמה: 5.5" required>
-	  
-	  <label for="interest-rate" style="font-size: 18px;">תקופת גרייס (אופציונלי)</label>
-	  <div class="input" style="display:flex;justify-content: right; align-items:center;">
-		<input type="checkbox" class="chb" id="chb" style="max-width:50px;" onchange="addgrace(this)">
-		<select style="width:60px;height:20px;margin-right:20px;" id="grace" class="grace">בחר תקופה בחודשים</select>
-	  </div>
-      
-      <button type="button" id="calculate-btn" style="font-size: 18px;">חשב</button>
-      
-    </form>
-    <button class="loachsilukin" id="loachsilukin" onclick="silukin()">הצג לוח סילוקין</button>
-  <div class="tables">
-<table id="toz" class="toz">
-      <tr>
-        <th>תשלום חודשי</th>
-        <td id="tashlomhodshi"></td>
-      </tr>
-      <tr>
-        <th>סך החזרים</th>
-        <td id="hechzerim"></td>
-      </tr>
-      <tr>
-        <th>סך ריבית</th>
-        <td id="ribit"></td>
-      </tr>
-    </table>
-   
-    <table id="amortization-schedule" class="amortization-schedule">
-      <thead>
-        <tr>
-          <th>חודש</th>
-          <th>תשלום </th>
-          <th>קרן</th>
-          <th>ריבית</th>
-          <th>יתרה</th>
-        </tr>
-      </thead>
-      <tbody>
-        <!-- נתונים יתווספו דינאמית -->
-      </tbody>
-    </table>
-  
-  </div>
-  </div>
-  
-</main>
-  <script src="loanscript.js"></script>
+        </div>
+        <div class="schomhashkaa">
+            <button id="schom" onclick="opn('dropdown-schom')">בחר סכום השקעה<i class="fa fa-arrow-down hetz"></i></button>
+            <div class="dropdown-schom" id="dropdown-schom">
+                <div id="schomdiv1">
+                    <label for="txtutton1" class="lbltxt" >סכום חד פעמי</label>    
+                    <input onchange="onch()" type="number" class="txtbutton" id="hadpeami" min="1000" step="500" name="schomhash">    
+                </div >
+                <div id="schomdiv2">
+                    <label for="txtbutton2" class="lbltxt">סכום חודשי</label>
+                    <input  onchange="onch()" type="number" class="txtbutton" id="hodshi" min="50" step="50" name="schomhash">
+                </div>
+            </div>
+
+        </div>
+        <div class="tkofa">
+            <button id="tkofa"  onclick="opn('dropdown-tkofa')" >בחר תקופה ודמי ניהול<i class="fa fa-arrow-down hetz"></i></button>
+            <div class="dropdown-tkofa" id="dropdown-tkofa">
+                <div id="tkofa1">
+                    <label for="txttkofa1" class="lbltxt">תקופה בשנים</label>    
+                    <select  onchange="onch()" class="txtbutton" id="txttkofa1" ></select>    
+                </div >
+                <div id="dmeynihul">
+                    <label for="txttkofa2" class="lbltxt">שיעור דמי ניהול</label>
+                    <select   onchange="onch()"  class="txtbutton" id="txttkofa2" ></select>   
+                </div>
+            </div>
+
+        </div>
+        <button id="hashev" onclick="hashev(0.04)">חשב</button>
+        </div>
+        <div class="alltoz" id="alltoz">
+            <div class="divtozz">
+                <div class="kottoz">חישוב לפי ריבית של 4% שנתי:</div>
+                <div class="ribitother">
+                    <label class="lbltoz">בחר ריבית אחרת</label>
+                    <select class="selecttoz" id="selecttoz" onchange="othribit()">
+                </div>
+
+                </select>
+            </div>
+            
+        </div>
+        <div class="tozaot colComp12" id="tozaot" style="display: block;"></div>
+    </main>
+
 </body>
 </html>
