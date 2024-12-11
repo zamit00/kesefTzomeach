@@ -82,7 +82,7 @@ function rdchange(){
         var rb=document.getElementById('selecttoz').value;
 
 // עדכון הטקסט בתוך האלמנט עם ID kottoz
-document.getElementById("kottoz").textContent = `לפי ריבית ${rb*100}% שנתי:`;       
+document.getElementById("kottoz").textContent = `לפי ריבית ${Math.round(rb*100)}% שנתי:`;       
         hashev(rb);
     }
 
