@@ -79,7 +79,10 @@ function rdchange(){
         otherribit.appendChild(option);  
     }
     function othribit(){
-        var rb=document.getElementById('selecttoz').value
+        var rb=document.getElementById('selecttoz').value;
+
+// עדכון הטקסט בתוך האלמנט עם ID kottoz
+document.getElementById("kottoz").textContent = `לפי ריבית ${rb*100}% שנתי:`;       
         hashev(rb);
     }
 
