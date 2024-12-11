@@ -101,7 +101,8 @@ function silukin(){
  
 }
 	
-
+function clr(){location.reload();
+}
 	
 	
 	document.getElementById('calculate-btn').addEventListener('click', function () {
@@ -121,8 +122,9 @@ const loanTerm = parseInt(document.getElementById('loan-term').value);
         alert('נא למלא את כל השדות בצורה נכונה.');
         return;
       }
-      if(opt==='חשב'){
-        document.getElementById('calculate-btn').textContent='נקה הכל';
+      
+       document.getElementById('calculate-btn').style.width='40%';
+	document.getElementById('clear-btn').style.display="block";
       const monthlyInterestRate = annualInterestRate / 12;
 	  var loanAmountnew;
 	  if(chekb.checked){
@@ -140,10 +142,7 @@ const loanTerm = parseInt(document.getElementById('loan-term').value);
       document.getElementById('tashlomhodshi').innerText=Number(monthlyPayment.toFixed(2)).toLocaleString();
       document.getElementById('hechzerim').innerText=Number((monthlyPayment*loanTerm).toFixed(2)).toLocaleString();
       document.getElementById('ribit').innerText=Number(((monthlyPayment*loanTerm)-loanAmount).toFixed(2)).toLocaleString();
-    }
-    else{
-      location.reload();
-    }
+    
   
     /*table.style.display="block";*/
   });
