@@ -63,7 +63,18 @@ body {
     border-radius: 4px;
     cursor: pointer;
   }
+
+.clear-btn{display:none;width: 40%;
+    padding: 10px;
+    background: rgb(255,100,0);
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;}
   
+  .buttons{width:90vw;display:flex;justify-content:space-evenly;}
+
   button:hover {
     background: #218838;
   }
