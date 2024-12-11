@@ -10,6 +10,17 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.3/xlsx.full.min.js"></script>
   <script>
     function clsw(){window.close()}
+
+ function formatNumber(input) {
+  // הסרת כל תווים שאינם ספרות
+  const numericValue = input.value.replace(/[^\d]/g, '');
+
+  // המרת המספר לעיצוב עם פסיקים
+  const formattedValue = numericValue ? parseInt(numericValue, 10).toLocaleString() : '';
+
+  // עדכון השדה עם הערך המעוצב
+  input.value = formattedValue;
+}
   </script>
   <style>
       .xsign{color:white;position:fixed;left:20px;top:20px;}
@@ -79,7 +90,7 @@
 	<div class="schom" id="schomdiv">
         <div class="rd sch"> 
             <label for="schom"  style='font-size:16px' class="lbl">הקלד סכום</label>
-            <input type="number" id="schom" min=1/> 
+	 <input type="text" id="schom" placeholder="לדוגמה: 1000"  required inputmode="numeric" oninput="formatNumber(this)" />
         </div>
     </div>
     <div class="schom" id="hashevdiv">
