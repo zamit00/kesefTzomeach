@@ -102,7 +102,8 @@ th, td {
     
       .container{ max-width: 75vw}
       #amortization-schedule th,#amortization-schedule td{width: 15vw;box-sizing: border-box;}
-      #toz th,#toz td{width:30vw;box-sizing: border-box;}
+      #toz th,#toz td{width:50vw;box-sizing: border-box;}
+      #toz{width:100vw;box-sizing: border-box;}
       
   }  
   @media only screen and (max-width: 768px){
