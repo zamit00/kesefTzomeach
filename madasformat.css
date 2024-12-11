@@ -16,8 +16,8 @@ body{font-family: Arial, Helvetica, sans-serif;font-size: 16px;margin: 0%;paddin
         font-size: 16px;text-align: center;border: none; background-color: rgb(238, 235, 235);}
     .rd{padding: 7px 0px; margin-right: 10px;}
     .lblmadad{margin-right:10px ;}
-    .dated,#schom{width: 30vw;float: left;margin-left: 50vw;text-align: center;}
-    .dated{padding-left:2vw;}
+    .dated,#schom{width: 30vw;float: left;margin-left: 50vw;text-align: right;}
+    .dated{padding-right:1vw;}
   .btn{width: 95vw;border: none;background-color:#333;
         font-size: 22px;color: white;font-weight: bold;background-color: rgb(89, 227, 89)}
     .hashev{background-color: rgb(89, 227, 89);padding: 3px 0px;}
