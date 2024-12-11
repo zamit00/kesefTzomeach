@@ -1,5 +1,5 @@
 
-		const select=document.getElementById('grace');
+	const select=document.getElementById('grace');
         for (let i = 1; i <= 36; i++) {
         let option = document.createElement('option');
         option.value = i;  
@@ -25,6 +25,8 @@ function silukin(){
   const monthlyInterestRate = annualInterestRate / 12;
   const gr=document.getElementById('grace');
   const chekb=document.getElementById('chb');
+  const disclaimer=document.getElementById('disclaimer');
+	
   
   var loanAmountnew;
   if(chekb.checked){
@@ -95,6 +97,7 @@ function silukin(){
     }
       }
  table.style.display="block";
+ disclaimer.style.display="block";
  
 }
 	
