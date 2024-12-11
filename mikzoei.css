@@ -1,0 +1,82 @@
+header{height: 22vh;position: fixed;top:0;background-color: #333;
+    box-sizing: border-box;border-radius: 10px;}
+body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        direction: rtl;
+        margin: 0;
+        padding: 0;
+        background-color: #f9f9f9;
+}
+h1, h2 {color:rgb(89, 227, 89);font-weight: bolder;}
+ul {padding-left: 20px;}
+
+
+@media only screen and (min-width: 767px){
+    .logo{position: fixed;right: 22vw;top:2vh;width:100px; height:auto;}
+    header{width: 60vw;margin-right: 20vw;box-sizing: border-box;}
+    .kot h2{color:white;position: absolute; left: 50%; transform: translateX(-50%);top: 7vh;
+    white-space: nowrap;}
+    .kot h1{color:rgb(89, 227, 89);position: absolute; left: 50%; transform: translateX(-50%);
+        top: 1vh;margin-top: 0%;}
+    main{ width: 60vw;margin-right: 19.5vw;margin:auto; margin-top: 20vh;
+        box-sizing: border-box; border-radius: 8px;background: #ffffff;
+        padding: 20px;box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);} 
+    
+}
+
+@media only screen and (max-width: 768px){
+    .logo{position: fixed;right: 3vw;top:2vh;width:100px; height:auto;}
+    header{width: 100vw;box-sizing: border-box;}
+    .kot h2{color:white;position: absolute; left: 50%; transform: translateX(-50%);top: 7vh;
+    white-space: nowrap;}
+    .kot h1{color:rgb(89, 227, 89);position: absolute; left: 50%; transform: translateX(-50%);
+        top: 1vh;margin-top: 0%;}
+    main{ width: 95vw;margin-right:5vw; margin-top: 20vh;
+        box-sizing: border-box; border-radius: 8px;background: #ffffff;
+        padding: 15px;box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);word-break: keep-all;overflow: auto;} 
+    
+}
+@media only screen and (max-width: 500px){
+    .logo{position: fixed;right: 1.5vw;top:2vh;width:75px; height:auto;}
+    
+
+}
+@media only screen and (max-width: 320px){
+    .logo{position: fixed;right: 1vw;top:2vh;width:65px; height:auto;} 
+}
+
+
+/*
+    
+    .kot h2{font-size: 27px;margin-top: 10px;}
+    
+    @media only screen and (min-width: 767px){
+    
+    
+    header{width: 60vw;height: 18vh;position: fixed;top:0;background-color: #333;
+      margin-right: 19.5vw;box-sizing: border-box;border-radius: 10px;}
+    
+   
+}
+  @media only screen and (max-width: 768px){
+    main{width: 100vw;}
+    .logo{position: fixed;right: 4vw;top:3vh;width:100px; height:auto;}
+    header{width: 100vw;height: 18vh;margin-right: 0vw;}
+    .kot h1{font-size: 30px;margin-top: 0px;padding-top:0;}
+    .kot h2{font-size: 22px;margin-top: 10px;white-space:nowrap;}
+    .xsign{color:white;position:fixed;left:20px;
+        top:20px;}
+  }
+  @media only screen and (max-width: 500px){
+    .logo{position: fixed;right: 4vw;top:2vh;width:75px; height:auto;}
+  }
+  @media only screen and (max-width: 320px){
+    .logo{position: fixed;right: 4vw;top:2vh;width:55px; height:auto;}
+  }
+        
+        
+        
+        
+      
+        */
