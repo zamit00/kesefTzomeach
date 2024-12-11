@@ -69,7 +69,7 @@ function rdchange(){
         let option = document.createElement('option');
         
         // Check if i is approximately 1, with a tolerance
-        if (Math.abs(i - 1) < 0.0001) {
+        if (Math.abs(i - 0.04) < 0.0001) {
             option.selected = true;
         }
         
