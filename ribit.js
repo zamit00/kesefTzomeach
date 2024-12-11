@@ -95,9 +95,7 @@ function hashev(x) {
     if(!x2){x2=0};
     if(x1===0 && x2===0){alert('הוסף סכומי השקעה')
         var element=document.getElementById('dropdown-schom')
-        element.style.display='flex' ;
-    const kottoz=document.getElementById('kottoz');
-      kottoz.innerText='לפי ריבית: '+  rb*100 + '% ' +  'שנתית'                 
+        element.style.display='flex' ;               
         
         var rd1=document.getElementById('rdbutton1');
         var rd2=document.getElementById('rdbutton2');
