@@ -97,7 +97,7 @@ function hashev(x) {
         var element=document.getElementById('dropdown-schom')
         element.style.display='flex' ;
     const kottoz=document.getElementById('kottoz');
-      kottoz.innerText=`לפי ריבית:  ${rb*100}% שנתית`                  
+      kottoz.innerText='לפי ריבית: '+  rb*100 + '% ' +  'שנתית'                 
         
         var rd1=document.getElementById('rdbutton1');
         var rd2=document.getElementById('rdbutton2');
