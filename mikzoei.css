@@ -27,7 +27,7 @@ ul {padding-left: 20px;}
 
 @media only screen and (max-width: 768px){
     .logo{position: fixed;right: 3vw;top:2vh;width:100px; height:auto;}
-    header{width: 100vw;box-sizing: border-box;}
+    header{width: 100vw;box-sizing: border-box;border-radius:none;}
     .kot h2{color:white;position: absolute; left: 50%; transform: translateX(-50%);top: 7vh;
     white-space: nowrap;}
     .kot h1{color:rgb(89, 227, 89);position: absolute; left: 50%; transform: translateX(-50%);
