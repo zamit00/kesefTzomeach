@@ -56,7 +56,7 @@ function bodedf(x) {
     
     let datef = new Date(df.value); 
     let datet = new Date(dt.value); 
-    const numericValue = document.getElementById('loan-amount').value.replace(/[^\d]/g, '');
+    const numericValue = document.getElementById('schom').value.replace(/[^\d]/g, '');
     const schom=parseFloat(numericValue);
     
     if( isNaN(datef) || isNaN(datet) || datef>datet){alert('בדוק תקינות תאריכים');return;}
