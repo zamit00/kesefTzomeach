@@ -22,7 +22,7 @@ ul {padding-left: 20px;}
     main{ width: 60vw;margin-right: 19.5vw;margin:auto; margin-top: 20vh;
         box-sizing: border-box; border-radius: 8px;background: #ffffff;
         padding: 20px;box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);} 
-    
+    .xsign{display:none;}
 }
 
 @media only screen and (max-width: 768px){
@@ -35,7 +35,7 @@ ul {padding-left: 20px;}
     main{ width: 95vw;margin-right:5vw; margin-top: 20vh;
         box-sizing: border-box; border-radius: 8px;background: #ffffff;
         padding: 15px;box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);word-break: keep-all;overflow: auto;} 
-    
+    .xsign{color:white;position:fixed;left:30px; top:20px;}
 }
 @media only screen and (max-width: 500px){
     .logo{position: fixed;right: 1.5vw;top:2vh;width:75px; height:auto;}
