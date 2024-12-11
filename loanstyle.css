@@ -78,7 +78,7 @@ body {
     table-layot: fixed;
     border-collapse: collapse; 
 }
-#amortization-schedule,#toz,.grace,.disclaimer{display:none;}
+#amortization-schedule,#toz,.grace{display:none;}
 #toz{margin-bottom: 10px;}
 th, td {
     padding: 2px; 
