@@ -1,5 +1,5 @@
 header{height: 22vh;position: fixed;top:0;background-color: #333;
-    box-sizing: border-box;border-radius: 10px;}
+    box-sizing: border-box;}
 body {
         font-family: Arial, sans-serif;
         line-height: 1.6;
@@ -27,7 +27,7 @@ ul {padding-left: 20px;}
 
 @media only screen and (max-width: 768px){
     .logo{position: fixed;right: 3vw;top:2vh;width:100px; height:auto;}
-    header{width: 100vw;box-sizing: border-box;border-radius:none;}
+    header{width: 100vw;box-sizing: border-box;}
     .kot h2{color:white;position: absolute; left: 50%; transform: translateX(-50%);top: 7vh;
     white-space: nowrap;}
     .kot h1{color:rgb(89, 227, 89);position: absolute; left: 50%; transform: translateX(-50%);
