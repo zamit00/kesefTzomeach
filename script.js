@@ -6,11 +6,15 @@
 
 
 function hisht(x) {
+
+  const screenw=window.innerWidth;
+  const screenh=window.innerHeight;
+  const maxw=Math.min(screenw*0.95,800);
+  const maxh=Math.min(screenh*0.95,600);
+  const windowf=`width=${maxw},height=${maxh},resizable=yes,scrollbars=yes`;
+  
   // פתיחת הקובץ בחלון חדש
-  window.open(
-    x, 
-    '_blank', 
-    'width=760,height=600,top=100,left=100,resizable=yes,scrollbars=yes'
+  window.open( x, '_blank',  windowf
   );
 
   // סגירת תפריט ההמבורגר
