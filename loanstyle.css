@@ -75,9 +75,7 @@ body {
   
   .buttons{width:90vw;display:flex;justify-content:space-between;}
 
-  button:hover {
-    background: white;color: #333;
-  }
+  
   #loachsilukin:hover{background: blue;}
   th {
     background: #333;
