@@ -40,24 +40,24 @@
   <div class="container">
     <h1 style="color:green;font-size:22px;">סימולטור הלוואות - שפיצר</h1>
     <form id="loan-form">
-      <label for="loan-amount" style="font-size: 18px;">סכום הלוואה:</label>
+      <label class="lblkotloan" for="loan-amount" style="font-size: 18px;">סכום הלוואה:</label>
       <input type="text" id="loan-amount" placeholder="לדוגמה: 100000" 
   required inputmode="numeric" oninput="formatNumber(this)" />
 
-      <label for="loan-term" style="font-size: 18px;" >תקופת החזרים (חודשים):</label>
+      <label class="lblkotloan" for="loan-term" style="font-size: 18px;" >תקופת החזרים (חודשים):</label>
       <input  type="number" id="loan-term" placeholder="לדוגמה: 60" required>
       
-      <label for="interest-rate" style="font-size: 18px;">ריבית שנתית (%):</label>
+      <label class="lblkotloan" for="interest-rate" style="font-size: 18px;">ריבית שנתית (%):</label>
       <input  type="number" id="interest-rate" step="0.1" placeholder="לדוגמה: 5.5" required>
 	  
-	  <label for="interest-rate" style="font-size: 18px;">תקופת גרייס (אופציונלי)</label>
+	  <label class="lblkotloan" for="interest-rate" style="font-size: 18px;">תקופת גרייס (אופציונלי)</label>
 	  <div class="input" style="display:flex;justify-content: right; align-items:center;">
 		<input type="checkbox" class="chb" id="chb" style="max-width:50px;" onchange="addgrace(this)">
 		<select style="width:60px;height:20px;margin-right:20px;" id="grace" class="grace">בחר תקופה בחודשים</select>
 	  </div>
       
       <div class="buttons">
-		<button type="button" id="calculate-btn" style="font-size: 18px;">חשב</button>
+		<button class="lblkotloan" type="button" id="calculate-btn" style="font-size: 18px;">חשב</button>
 		<button type="button" class="clear-btn" id="clear-btn" style="font-size: 18px;" onclick="clr()">נקה הכל</button>
       </div>
       
