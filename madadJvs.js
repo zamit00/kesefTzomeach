@@ -38,12 +38,11 @@ function shita(){
   
 
     if (boded.checked) {
-        window.location.reload();    
-        document.getElementById('madadstyle').style.display='flex';
-        document.getElementById('taarich').style.display='flex';
-        document.getElementById('schomdiv').style.display='flex';
-        document.getElementById('hashevdiv').style.display='flex';
-        document.getElementById('btnlblup').style.display='none';
+        document.getElementById('madadstyle').style.display='block';
+        document.getElementById('taarich').style.display='block';
+        document.getElementById('schomdiv').style.display='block';
+        document.getElementById('hashevdiv').style.display='block';
+        document.getElementById('btnlblup').style.display='block';
         outputDiv.innerHTML = '';
         document.getElementById('input-excel').value = '';
     }
