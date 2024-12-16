@@ -155,8 +155,8 @@ else{
     document.getElementById('nm1').textContent=madadf.toFixed(2);
     document.getElementById('nm2').textContent=madadt.toFixed(2);
 
-    document.getElementById('tozk').textContent=Number(schom).toLocaleString();
-    document.getElementById('tozm').textContent=schommemudad;
+    document.getElementById('tozk').textContent=Number(schom).toLocaleString()+' ש"ח';
+    document.getElementById('tozm').textContent=schommemudad+' ש"ח';
     document.getElementById('tables').style.display="block";
     
 }
