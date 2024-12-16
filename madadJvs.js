@@ -1,4 +1,4 @@
-/*document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function() {
     
     console.log("המסמך נטען!");
 	const fileUrl = 'madadim.xlsx';
@@ -14,11 +14,11 @@
                     console.log(json);  // מציג את הנתונים בקונסול
                 })
                 .catch(error => console.error('Error loading Excel file:', error));
-        });
+        
 });
 
 
-*/
+
 
 const todayd=new Date();
 
