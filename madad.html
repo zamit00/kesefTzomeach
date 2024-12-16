@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>keseftsomeach</title>
-    <link rel="stylesheet" href="madasformat.css"/>
     <link rel="stylesheet" href="koteretstyle.css"/>
+    <link rel="stylesheet" href="madasformat.css"/>
     <script src="madadJvs.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.3/xlsx.full.min.js"></script>
   <script>
@@ -43,9 +43,10 @@
          </div>
     </header> 
     <main>
-     
-	<div class="headkot"> מחשבון הצמדה למדד </div>
+	    <div class="headkot"> מחשבון הצמדה למדד </div>
+    
         <div class="shita" id="shita">
+            <div class="lbldiv">השיטה</div>
             <div class="rd">
                 <input type="radio" name="shita" class="boded"  id="boded" onchange="shita()" checked>
                 <label>חישוב בודד</label>
@@ -55,16 +56,19 @@
                     <input type="radio" name="shita" class="kovetz" id="kovetz" onchange="shita()">
                     <label>העלאת קובץ (לפי מדד ידוע)</label>
                 </div>
+            </div>
+            <div class='btnlblup' id="btnlblup">
+                <input type="file" id="input-excel" class="btnup"
+                accept=".xlsx, .xls" onchange="yavee(event)" value="בחר"/>
+                <pre id="fileCntent"></pre>
+            </div>
         </div>
         
-        </div>
-        <div class='btnlblup' id="btnlblup">
-            <input type="file" id="input-excel" class="btnup"
-            accept=".xlsx, .xls" onchange="yavee(event)" value="בחר"/>
-            <pre id="fileCntent"></pre>
-        </div>
+       
+        
         <div class="madadstyle" id="madadstyle">
             <div >
+                <div class="lbldiv">סוג מדד</div>
                 <div class="rd">
                     <input type="radio" name="madad" class="boded"  id="yadoa" checked>
                     <label>מדד ידוע</label>
@@ -79,6 +83,7 @@
 
         
         <div class="taarich" id="taarich">
+            <div class="lbldiv">תאריכים </div>
              <div class="rd">  
                 <label for="datefrom" class="lbl" style='font-size:16px' >בחר תאריך מ</label>
                 <input type="date" class="dated" id="datefrom" min="1952-01-01" lang="he" dir="rtl" required>
@@ -89,48 +94,49 @@
             </div>
         </div>
         
-	<div class="schom" id="schomdiv">
-        <div class="rd sch"> 
-            <label for="schom"  style='font-size:16px' class="lbl">הקלד סכום</label>
-	 <input type="text" id="schom" placeholder="לדוגמה: 1000"  required inputmode="numeric" oninput="formatNumber(this)" />
+	    <div class="schom" id="schomdiv">
+            <div class="lbldiv">סכום </div>
+            <div class="rd sch"> 
+                <label for="schom"  style='font-size:16px' class="lbl">הקלד סכום</label>
+	             <input type="text" id="schom" placeholder="לדוגמה: 1000"  required inputmode="numeric" oninput="formatNumber(this)" />
+            </div>
         </div>
-    </div>
-    <div class="schom" id="hashevdiv">
-	    <div class=" hashev"> 
-	        <input type="button" onclick="cnl()" class="btn" value="חשב" id="hashev"/>
+        <div class="btnhashev" id="hashevdiv">
+            <div class=" hashev"> 
+                <input type="button" onclick="cnl()" class="btn" value="חשב" id="hashev"/>
+            </div>
         </div>
-    </div>
-    <div id="tables">
-        <table class="tbltozaa">
-            <tr>
-                <th class="wt">תאריך</th>
-                <th class="wt">חודש מדד</th>
-                <th>מדד (בסיס 1951)</th>
-            </tr>
-            <tr>
-                <td id="frt1"></td>
-                <td id="md1"></td>
-                <td id="nm1"></td>
-            </tr>
-            <tr>
-                <td id="frt2"></td>
-                <td id="md2"></td>
-                <td id="nm2"></td>
-            </tr>
-        </table>
-	<table class="tbltozaaH">
-            <tr>
-                <th class="wtd">סכום הפקדה</th>
-                <td colspan="2" id="tozk"></td>  
-            </tr>
-            <tr>
-                <th >סכום צמוד למדד</th>
-                <td colspan="2" id="tozm"></td>  
-            </tr>
-        </table>
-    </div>    
+        <div id="tables">
+            <table class="tbltozaa">
+                <tr>
+                    <th class="wt">תאריך</th>
+                    <th class="wt">חודש מדד</th>
+                    <th>מדד (בסיס 1951)</th>
+                </tr>
+                <tr>
+                    <td id="frt1"></td>
+                    <td id="md1"></td>
+                    <td id="nm1"></td>
+                </tr>
+                <tr>
+                    <td id="frt2"></td>
+                    <td id="md2"></td>
+                    <td id="nm2"></td>
+                </tr>
+            </table>
+	        <table class="tbltozaaH">
+                <tr>
+                    <th class="wtd">סכום הפקדה</th>
+                    <td colspan="2" id="tozk"></td>  
+                </tr>
+                <tr>
+                    <th >סכום צמוד למדד</th>
+                    <td colspan="2" id="tozm"></td>  
+                </tr>
+            </table>
+        </div>    
     <!-- מקום להציג את הנתונים -->   
-    <div id="output"></div>
-</main>	
+        <div id="output"></div>
+    </main>	
 </body>
 </html>
