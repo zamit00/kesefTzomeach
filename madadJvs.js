@@ -1,21 +1,21 @@
 document.addEventListener('DOMContentLoaded', function() {
     
     console.log("המסמך נטען!");
-	const fileUrl = 'madadim.xlsx';
+    const fileUrl = 'madadim.xlsx';
 
     fetch(fileUrl)
-                .then(response => response.arrayBuffer())  
-                .then(data => {
-                    const workbook = XLSX.read(data, { type: 'array' });
-                    const sheetName = workbook.SheetNames[0];  
-                    const sheet = workbook.Sheets[sheetName];
+        .then(response => response.arrayBuffer())  
+        .then(data => {
+            const workbook = XLSX.read(data, { type: 'array' });
+            const sheetName = workbook.SheetNames[0];  
+            const sheet = workbook.Sheets[sheetName];
 
-                    const json = XLSX.utils.sheet_to_json(sheet);
-			alert(jason[1][1]);
-                    console.log(json);  // מציג את הנתונים בקונסול
-                })
-                .catch(error => console.error('Error loading Excel file:', error));
-        
+            const json = XLSX.utils.sheet_to_json(sheet);
+            alert(json[1][1]);  // Corrected the typo here: 'jason' -> 'json'
+            console.log(json);  // מציג את הנתונים בקונסול
+        })
+        .catch(error => console.error('Error loading Excel file:', error));
+
 });
 
 
