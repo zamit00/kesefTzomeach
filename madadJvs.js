@@ -106,7 +106,28 @@ else{
     formatdatef=String(monthf)+String(yearf);  
     formatdatet=String(montht)+String(yeart);    
 }  
-    
+
+    const fileUrl = 'madadim.xlsx';
+
+    fetch(fileUrl)
+                .then(response => response.arrayBuffer())  
+                .then(data => {
+                    const workbook = XLSX.read(data, { type: 'array' });
+                    const sheetName = workbook.SheetNames[0];  
+                    const sheet = workbook.Sheets[sheetName];
+
+                    const json = XLSX.utils.sheet_to_json(sheet);
+                    console.log(json);  // מציג את הנתונים בקונסול
+                })
+                .catch(error => console.error('Error loading Excel file:', error));
+        });
+
+	return;
+
+
+
+
+	
     var x= madad.indexOf (Number("-"+formatdatef));
     const madadf= madad.slice(x+1, x+2)*-1;
     var x= madad.indexOf (Number("-"+formatdatet));
