@@ -1,34 +1,26 @@
-body{font-family: Arial, Helvetica, sans-serif;font-size: 16px;margin: 0%;padding: 0;}
-.xsign{color:white;position:fixed;left:20px;top:20px;}
+body{font-family: Arial, Helvetica, sans-serif;font-size: 16px;margin: 0%;padding: 0;
+}
+#tables{display: none;}
+@media only screen and (min-width: 767px){
+  body{display: flex;flex-direction: column;align-items: center;}
+  header{width: 60vw;box-sizing: border-box;}
+  main{display:flex;flex-direction: column;align-items: center;  height: 600px;width: 800px;box-sizing: border-box;margin: 0%;padding: 0%;box-sizing: border-box;}
+  .logo{position: fixed;right: 21vw;top:3vh;width:80px; height:auto;}
+  .headkot{display: flex;justify-content: center;font-size: 22px;
+    color: green;font-weight: bold;margin-top: 20vh;margin-bottom: 10px;}
+    .lbldiv{font-size: 20px;margin: 0 0 10px 0;background-color: #333;
+      width: 60vw;box-sizing: border-box;color: white;}
+  .shita,.madadstyle,.taarich,.schom{border: 1px solid #333;width: 60vw;position: relative;}
+  .rd{padding: 7px 0px; margin-right: 10px;}
+  .btnlblup{position: absolute;left: 0; bottom: 0;display: none;}
+  .dated,#schom{width: 15vw;float: left;margin-left: 1vw;}
+  #hashev{margin: 10px 0px;width: 110px;height: 35px;font-size: 18px;
+    background-color: #333;color: white;}
 
-@media only screen and (max-width: 768px){
-
-  main{margin-top: 20vh;}
-
-  .headkot{width: 100vw;display: flex;justify-content: center;font-size: 22px;
-    color: green;font-weight: bold;}
-  .shita,.madadstyle,.taarich,.schom{
-      display: flex;flex-direction: column;width: 100vw;
-      background-color: rgb(238, 235, 235);border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-    }
+    .tbltozaa{width: 60vw;}
+    .tbltozaaH{width: 30vw;margin-top: 20px;}
     
-    .sugmadad{float: left;margin-left: 50vw;width: 20vw;height: 25px;
-        font-size: 16px;text-align: center;border: none; background-color: rgb(238, 235, 235);}
-    .rd{padding: 7px 0px; margin-right: 10px;}
-    .lblmadad{margin-right:10px ;}
-    .dated,#schom{width: 35vw;float: left;margin-left: 45vw;text-align: right;}
-    .dated{padding-right:1vw;}
-  .btn{width: 95vw;border: none;background-color:#333;
-        font-size: 22px;color: white;font-weight: bold;background-color: rgb(89, 227, 89)}
-    .hashev{background-color: rgb(89, 227, 89);padding: 3px 0px;}
-    .sch{padding: 12px 0px;}
-    .up{display: flex;flex-direction:column;white-space: nowrap;}
-    .btnlblup{margin: 10px;display: none;}
-
-    .tbltozaa{width: 100vw;margin-left: auto;margin-right: auto;}
-    .tbltozaaH{width: 80vw;margin-top: 20px;}
-    
-    tr,td,th{height: 25px;width: 40vw;text-align: center;}
+    tr,td,th{height: 25px;width: 13.33vw;text-align: center;}
     th{background-color: #333;color: white;border: 1px solid #333;}
     .wt{border-left: 1px solid white;}
     .wtd{border-bottom: 1px solid white;}
@@ -36,54 +28,52 @@ body{font-family: Arial, Helvetica, sans-serif;font-size: 16px;margin: 0%;paddin
       border:1px solid #333;border-collapse: collapse;background-color:rgb(238, 235, 235) ;
       
     }
+    #tables{border:1px solid #333;width: 60vw;}
+}
+@media only screen and (max-width: 800px){
+  .logo{position: fixed;right: 20.5vw;top:3vh;width:70px; height:auto;} 
+}
+@media only screen and (max-width: 767px){
+  .xsign{color:white;position:fixed;left:20px;top:20px;}
+  .logo{position: fixed;right: 20.5vw;top:3vh;width:70px; height:auto;} 
+  body{display: flex;flex-direction: column;align-items: center;}
+  header{width: 100vw;box-sizing: border-box;}
+  main{display:flex;flex-direction: column;align-items: center;  height: auto;width: 100vw;box-sizing: border-box;margin: 0%;padding: 0%;box-sizing: border-box;}
+  .logo{position: fixed;right: 2vw;top:3vh;width:80px; height:auto;}
+  .headkot{display: flex;justify-content: center;font-size: 22px;
+    color: green;font-weight: bold;margin-top: 20vh;margin-bottom: 10px;}
+    .lbldiv{font-size: 20px;margin: 0 0 10px 0;background-color: #333;
+      width: 100vw;box-sizing: border-box;color: white;text-align: center;}
+  .shita,.madadstyle,.taarich,.schom{border: 1px solid #333;width: 100vw;position: relative;}
+  .rd{padding: 7px 0px; margin-right: 10px;}
+  .btnlblup{position: absolute;left: 0; bottom: 0;display: none;}
+  .dated,#schom{width: 30vw;float: left;margin-left: 25vw;}
+  #hashev{margin: 10px 0px;width: 120px;height: 30px;font-size: 20px;
+    background-color: #333;color:rgb(89, 227, 89);font-weight:bold;}
+
+    .tbltozaa{width: 100vw;}
+    .tbltozaaH{width: 30vw;margin-top: 20px;}
     
-    #tables{display: none;}
-    
+    tr,td,th{height: 25px;width: 13.33vw;text-align: center;}
+    th{background-color: #333;color: white;border: 1px solid #333;}
+    .wt{border-left: 1px solid white;}
+    .wtd{border-bottom: 1px solid white;}
+    .tbltozaa, tr,  td,.tbltozaaH{
+      border:1px solid #333;border-collapse: collapse;background-color:rgb(238, 235, 235) ;
+      
+    }
+    #tables{border:1px solid #333;width: 100vw;}
 }
 @media only screen and (max-width: 480px){
-  
-  .dated,#schom{width: 25vw;float: left;margin-left: 30vw;}
-  
-  
-}
-@media only screen and (min-width: 767px){
- body {
-    width: 100%; 
-    margin: 0 auto; 
-    padding: 0; }
- main{margin-top: 20vh;}
+  .logo{position: fixed;right: 1vw;top:3vh;width:60px; height:auto;} 
 
-  .headkot{width: 100vw;display: flex;justify-content: center;font-size: 22px;
-    color: green;font-weight: bold;}
-  .shita,.madadstyle,.taarich,.schom{
-      display: flex;flex-direction: column;width: 100vw;
-      background-color: rgb(238, 235, 235);border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-    }
-    
-    .sugmadad{float: left;margin-left: 50vw;width: 20vw;height: 25px;
-        font-size: 16px;text-align: center;border: none; background-color: rgb(238, 235, 235);}
-    .rd{padding: 7px 0px; margin-right: 10px;}
-    .lblmadad{margin-right:10px ;}
-    .dated,#schom{width: 25vw;float: left;margin-left: 50vw;text-align: center;}
-    .btn{width: 95vw;border: none;background-color:rgb(238, 235, 235);
-        font-size: 22px;color: #333;font-weight: bold;background-color: rgb(89, 227, 89)}
-    .hashev{background-color: rgb(89, 227, 89);padding: 3px 0px;}
-    .sch{padding: 12px 0px;}
-    .up{display: flex;flex-direction:column;white-space: nowrap;}
-    .btnlblup{margin: 10px;display: none;}
-
-    .tbltozaa{width: 100vw;margin-left: auto;margin-right: auto;}
-    .tbltozaaH{width: 66vw;margin-top: 20px;}
-    
-    tr,td,th{height: 25px;width: 33vw;text-align: center;}
-    th{background-color: #333;color: white;border: 1px solid #333;}
-    .wt{border-left: 1px solid white;}
-    .wtd{border-bottom: 1px solid white;}
-    .tbltozaa, tr,  td,.tbltozaaH{
-      border:1px solid #333;border-collapse: collapse;background-color:rgb(238, 235, 235) ;
-      
-    }
-    
-    #tables{display: none;}
-  
 }
+
+/*
+
+
+
+  
+  
+  
+}*/
