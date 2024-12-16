@@ -1,4 +1,7 @@
-const fileUrl = 'madadim.xlsx';
+document.addEventListener('DOMContentLoaded', function() {
+    
+    console.log("המסמך נטען!");
+	const fileUrl = 'madadim.xlsx';
 
     fetch(fileUrl)
                 .then(response => response.arrayBuffer())  
@@ -12,6 +15,8 @@ const fileUrl = 'madadim.xlsx';
                 })
                 .catch(error => console.error('Error loading Excel file:', error));
         });
+});
+
 
 
 
