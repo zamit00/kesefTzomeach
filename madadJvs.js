@@ -38,6 +38,7 @@ function shita(){
   
 
     if (boded.checked) {
+        window.location.reload();    
         document.getElementById('madadstyle').style.display='flex';
         document.getElementById('taarich').style.display='flex';
         document.getElementById('schomdiv').style.display='flex';
