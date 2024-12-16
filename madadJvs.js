@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     const sheet = workbook.Sheets[sheetName];
 
                     const json = XLSX.utils.sheet_to_json(sheet);
+			alert(jason[1][1]);
                     console.log(json);  // מציג את הנתונים בקונסול
                 })
                 .catch(error => console.error('Error loading Excel file:', error));
