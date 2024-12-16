@@ -52,7 +52,7 @@ body{font-family: Arial, Helvetica, sans-serif;font-size: 16px;margin: 0%;paddin
     background-color: #333;color:rgb(89, 227, 89);font-weight:bold;}
 
     .tbltozaa{width: 100vw;}
-    .tbltozaaH{width: 30vw;margin-top: 20px;}
+    .tbltozaaH{width: 60vw;margin-top: 20px;}
     
     tr,td,th{height: 25px;width: 13.33vw;text-align: center;}
     th{background-color: #333;color: white;border: 1px solid #333;}
