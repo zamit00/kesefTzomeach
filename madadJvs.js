@@ -42,7 +42,7 @@ function shita(){
         document.getElementById('taarich').style.display='block';
         document.getElementById('schomdiv').style.display='block';
         document.getElementById('hashevdiv').style.display='block';
-        document.getElementById('btnlblup').style.display='block';
+        document.getElementById('btnlblup').style.display='none';
         outputDiv.innerHTML = '';
         document.getElementById('input-excel').value = '';
     }
