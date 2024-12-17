@@ -52,7 +52,7 @@ body{font-family: Arial, Helvetica, sans-serif;font-size: 16px;margin: 0%;paddin
     background-color: #333;color:rgb(89, 227, 89);font-weight:bold;}
 
     .tbltozaa{width: 100vw;}
-    .tbltozaaH{width: 60vw;margin-top: 20px;}
+    .tbltozaaH{width: 80vw;margin-top: 20px;}
     
     tr,td,th{height: 25px;width: 13.33vw;text-align: center;}
     th{background-color: #333;color: white;border: 1px solid #333;}
@@ -62,7 +62,7 @@ body{font-family: Arial, Helvetica, sans-serif;font-size: 16px;margin: 0%;paddin
       border:1px solid #333;border-collapse: collapse;background-color:rgb(238, 235, 235) ;
       
     }
-  .thtozz,.tozk,.tozk{width:30vw;}
+  .thtozz,.tozk,.tozk{width:40vw;}
     #tables{border:1px solid #333;width: 100vw;}
 }
 @media only screen and (max-width: 480px){
