@@ -287,8 +287,10 @@ table.style.display = 'block';
             formatdate="-"+String(mo-1)+String(yr);
         }
         
-
-
+fetch('madadim.txt')
+    .then(response => response.text())
+    .then(madad => {
+ 
         
 var x= madad.indexOf (Number(formatdate));
         
@@ -303,6 +305,7 @@ tr.appendChild(td2);
 const td3 = document.createElement('td');
         td3.textContent = Number(Number((row[1]*madadnow/w)).toFixed(2)).toLocaleString();
          tr.appendChild(td3);
+	  });	   
         }
             
                 
