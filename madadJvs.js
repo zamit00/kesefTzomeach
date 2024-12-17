@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+/*document.addEventListener('DOMContentLoaded', function() {
     
     console.log("המסמך נטען!");
     const fileUrl = 'madadim.xlsx';
@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-
+*/
 
 const todayd=new Date();
 
