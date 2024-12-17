@@ -1,4 +1,5 @@
 body {margin:0;padding: 0%;font-family:Arial;box-sizing: border-box;font-size: 14px;}
+body {padding-top:2vh;}
 header{width: 100vw;height: 22vh;position: fixed;top:0;background-color: #333;
 }
 .kot h1{color:rgb(89, 227, 89);position: absolute; left: 50%; transform: translateX(-50%);
