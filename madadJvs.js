@@ -73,6 +73,9 @@ function cnl(){
 }
 
 function bodedf(x) {
+    fetch('madadim.txt')
+    .then(response => response.text())
+    .then(madad => {
     let df = document.getElementById('datefrom');
     let dt = document.getElementById('dateto');
     
@@ -129,8 +132,7 @@ else{
     formatdatef=String(monthf)+String(yearf);  
     formatdatet=String(montht)+String(yeart);    
 }  
-
-    	
+   	
     var x= madad.indexOf (Number("-"+formatdatef));
     const madadf= madad.slice(x+1, x+2)*-1;
     var x= madad.indexOf (Number("-"+formatdatet));
@@ -159,8 +161,11 @@ else{
     document.getElementById('tozk').textContent=Number(schom).toLocaleString()+' ש"ח';
     document.getElementById('tozm').textContent=schommemudad+' ש"ח';
     document.getElementById('tables').style.display="block";
-    
+ }); 
+   .catch(error => console.error('Error:', error));	
 }
+  
+	
 
 
 function yavee(e) {
