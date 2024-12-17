@@ -22,6 +22,7 @@ main{display: flex;flex-direction: column;align-items: center;}
     width: 100%; 
     margin: 0 auto; 
     padding: 0; }
+body {padding-top:2vh;}
          .sughashkaa button, .schomhashkaa button, .tkofa button{width: 60vw;height:auto;background-color:  #333;
         color: white;font-size: 18px;font-weight: bold;}
     .dropdown-sug label, .schomhashkaa label ,.tkofa label{color: green;height: 3vh;font-size: 16px;}
